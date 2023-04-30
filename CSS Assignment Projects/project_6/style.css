@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0 15vw;
+  background: #0f0f10;
+}
+a{
+  text-decoration: none;
+}
+/* Designing the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+.logo {
+  width: 51px;
+  cursor: pointer;
+}
+.nav_ul {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.nav_ul li {
+  cursor: pointer;
+}
+.nav_button {
+  padding: 0.7rem 2.3rem;
+  font-size: 1.1rem;
+  /* background-color: rgb(58, 56, 56); */
+  background: #181a1b;
+  border-top: 1px solid rgb(150, 146, 146);
+  border-left: 1px solid rgb(133, 129, 129);
+  border-radius: 0.5rem;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Designing the first section */
+.first {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.first-left-section {
+  flex: 1;
+}
+.first-right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.first-right-section h1 {
+  margin-top: 8.9rem;
+  font-size: 4rem;
+}
+.first-right-section > p {
+  line-height: 2.5rem;
+  width: 78%;
+}
+
+.first-right-section > button{
+  /* background-color: rgb(58, 56, 56); */
+  background: #181a1b;
+  padding: 0.99rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  width: 55%;
+}
+.first-right-section > button a{
+  display: flex;
+  gap: 20px;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+}
+.mainImage {
+  position: absolute;
+  top: -249px;
+  left: 94px;
+  margin-right: 50px;
+}
+.onEar {
+  position: absolute;
+  top: 50px;
+  right: 41px;
+}
+
+/*Designing second  section*/
+.second{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.second img{
+    width: 100px;
+    cursor: pointer;
+}
+
+/*Designing third  section*/
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third-top{
+    margin-top: 3rem;
+}
+.third-left-section{
+  padding-top: 2.3rem;
+  margin-left: -24rem;
+  padding-bottom: 4rem;
+}
+.third-section-ul{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.third-section-ul > li > p {
+  line-height: 1.9rem;
+}
+.list-heading{
+  font-weight: 600;
+}
+#bluetooth , #mic {
+  margin-left: 3.3rem;
+}
+#mic > .list-details{
+width: 180px;
+}
+
+.third-right-section{
+ position: relative;
+}
+
+.third-right-section img{
+  position: absolute;
+  left: 15px;
+  top: -430px;
+}
+
+
+/*Designing fourth  section*/
+
+.fourth{
+  display: flex;
+  width: 73%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-top{
+  padding: 5rem 0;
+}
+
+.fourth-main-section{
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+  align-items: center;
+}
+.case-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.case-detail > p{
+  width: 207px;
+line-height: 2.5rem;
+}
+
+.case-detail > button{
+  /* background-color: rgb(58, 56, 56); */
+  background: #181a1b;
+  padding: 0.99rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  width: 94%;
+}
+
+.case-detail > button a{
+  display: flex;
+  gap: 25px;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Designing fifth  section*/
+.fifth{
+
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(58, 56, 56); */
+  background: #181a1b;
+  border: none;
+  border-radius: .6rem;
+  padding: 2.5rem;
+  margin:9.8rem 0 ;
+}
+.fifth-left-section{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fifth-left-section > h2{
+  width: 64%;
+}
+.fifth-left-section > button{
+  
+  background-color: black;
+  padding: 0.99rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  width: 40%;
+}
+
+
+.fifth-left-section > button a{
+  display: flex;
+  font-size: 1.01rem;
+  justify-content: center;
+  gap: 10px;
+}
+.fifth-right-section img{
+  width: 450px;
+}
+
+/*Designing sixth  section*/
+
+.sixth{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding:0 0 8rem 0;
+}
+
+.sixth-top{
+  padding:5rem;
+  position: absolute;
+  top: -111px;
+  left: 136px;
+}
+.products{
+  margin-top: 10rem;
+}
+.products-row{
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.product-card{
+  background: #181a1b;
+  padding:1.1rem;
+  border: none;
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  width: 190px;
+}
+.product-image{
+  width: 114px;
+    position: absolute;
+    left: 40px;
+    top: -65px;
+}
+.product-details{
+  padding-top: 5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* gap: 40px; */
+}
+
+.product-color{
+  margin-top: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.product-details > .bag{
+  padding:.3rem .6rem;
+  border: none;
+  border-radius: .4rem;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*Designing the footer section*/
+footer{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+footer img{
+  cursor: pointer;
+}
+
+footer li h2{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-list{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+ gap: 12px;
+
+}
+
+.footer-list li span{
+  font-weight: 400;
+ font-size: .9rem;
+}
+
+.contact{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #181a1b;
+  width: 416px;
+  padding:.5rem 0;
+  border: none;
+  border-radius: .6rem;
+}
+input[type="email"]{
+  background: #181a1b;
+  outline: none;
+  border: none;
+  font-size: 1.11rem;
+}
+.input > button{
+  background-color: black;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  width: 170px;
+
+}
+.input > button a{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+font-size: 1.01rem;
+}
+.input > button img{
+  width: 20px;
+  height: 17px;
+}
+.contact-logos{
+  display: flex;
+  gap: 18px;
+}
+
+.contact-logos a img{
+  width: 40px;
+}

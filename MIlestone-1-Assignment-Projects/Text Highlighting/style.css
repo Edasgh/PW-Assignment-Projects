@@ -1,0 +1,9 @@
+.paraContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 1.11rem;
+}

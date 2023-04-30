@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./images//bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2.8rem;
+}
+.navbar::after,.navbar::before{
+    background-color: black;
+}
+.nav_ul{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    font-size: 1.01rem;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.logo_list_item{
+    border-right: 2px solid white;
+    padding: 0 2.8rem 0 0;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+button{
+    background-color:#c500d3;
+    color: white;
+    border-radius: .5rem;
+    padding: .7rem 1.4rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.nav_button{
+    font-size: 1.03rem;
+}
+.mainBtn{
+    margin-top: 40px;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    padding: 6rem 23rem;
+}
+
+main .h1{
+    font-size: 4.4rem;
+    line-height: 5.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+main .h2{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate Password</title>
+    <style>
+        .message{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        #btn{
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            outline: none;
+            padding: .5rem;
+            border-radius: .3rem;
+        }
+    </style>
+  </head>
+  <body>
+    <form id="login-form">
+        <h1>Log-In Form</h1>
+      <label for="email">Enter Your Email</label>
+      <input type="text" name="email" id="email" />
+      <br /><br>
+      <label for="password">Enter your Password</label>
+      <input type="password" name="password" id="password" />
+      <br /><br>
+      <button id="btn" type="submit">Submit</button>
+      <br />
+      <p class="message"></p>
+      <br>
+    </form>
+
+    <script>
+      const form = document.getElementById("login-form");
+      const emailInput = document.getElementById("email");
+      const passwordInput = document.getElementById("password");
+      const button=document.getElementById("btn")
+      const messagePara = document.querySelector(".message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // button.addEventListener("click",()=>{
+
+        if (emailInput.value.includes("@") && passwordInput.value.length >= 8) {
+          messagePara.style.color = "green";
+          messagePara.textContent = "Valid email and password!";
+        }
+
+        if (
+          !emailInput.value.includes("@") ||
+          passwordInput.value.length < 8
+        ) {
+          messagePara.style.color = "red";
+          messagePara.textContent = "Invalid email or password!";
+        }
+    // })
+      });
+    </script>
+  </body>
+</html>

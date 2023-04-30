@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+@media (min-width: 280px){
+  .navbar {
+    background-color: black;
+    padding: 1rem 1.5rem;
+  }
+  .nav_ul {
+    display: none;
+  }
+  .nav_ul li {
+    cursor: pointer;
+    
+  }
+  #home{
+    background-color: rgb(113, 43, 226);
+    border: none;
+    border-radius: 0.6rem;
+    color: white;
+  }
+  .hamburger {
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .left .span,
+  .left .h1 {
+    color: white;
+  }
+  .left > .span {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+  }
+  .left > .h1 {
+    font-weight: bold;
+    font-size: 3.4rem;
+  }
+  .left > .h2 {
+    color: darkgoldenrod;
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+  .waving-hand {
+    width: 40px;
+  }
+  .right {
+    flex: 1;
+    width: 110%;
+  }
+  .right-section-photo {
+    width: 100%;
+  }
+
+  .second {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+  }
+  .second h2 {
+    font-size: 2.22rem;
+    border-bottom: 7px solid blue;
+  }
+  .second section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project img {
+    width: 200px;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+    color: white;
+  }
+  .third h2 {
+    font-size: 2.22rem;
+    border-bottom: 7px solid blue;
+    text-align: center;
+  }
+  .contact_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact_links img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+    .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 4.8rem;
+      }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .left > .span{
+        display: flex;
+        flex-direction: row;
+    }
+      .second section{
+        display: flex;
+        flex-direction: row;
+        gap: 33px;
+      }
+}
+
+
+@media (min-width: 1024px) {
+  .navbar {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hamburger {
+    width: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  .nav_ul {
+    display: flex;
+    gap: 10px;
+  }
+  .nav_ul li {
+    padding: 0.4rem 0.8rem;
+  }
+  
+
+  .first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+  }
+  .left {
+    flex: 1;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left .span,
+  .left .h1 {
+    color: white;
+  }
+  .left > .span {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-weight: 600;
+  }
+  .left > .h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+  }
+  .left > .h2 {
+    color: darkgoldenrod;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .waving-hand {
+    width: 40px;
+  }
+  .right {
+    flex: 1;
+    width: 110%;
+  }
+  .right-section-photo {
+    width: 100%;
+  }
+
+  .second {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+  }
+  .second h2 {
+    font-size: 2.22rem;
+    border-bottom: 7px solid blue;
+  }
+  .second section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project img {
+    width: 400px;
+    cursor: pointer;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+    color: white;
+  }
+  .third h2 {
+    font-size: 2.22rem;
+    border-bottom: 7px solid blue;
+  }
+  .contact_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact_links img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
