@@ -1,4 +1,5 @@
 body {
+    /*Styling the body*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,44 +7,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,rgb(113 255 82),rgb(0 166 255));
+    background: linear-gradient(to right,#71ff52,#00a6ff);
 }
-
+/* Styling the container div of the calculator */
 .container {
     padding: 1rem;
     margin-top: 5rem;
     /* box-shadow: 2px 2px 1px black,-2px -2px 1px grey; */
 }
-
+/* Styling the div of the input and output fields */
 .input {
     display: flex;
     flex-direction: column;
 }
-
+/* Styling the input field */
 #calculateInputPrev {
-    background: rgb(30, 26, 37);
+    background: #1e1a25;
     height: 3rem;
     font-size: 1.3rem;
     border-top-right-radius: .8rem;
     border-top-left-radius: .8rem;
-    /* display: none; */
+  
 }
-
+/* Styling the output field */
 #calculateInputCurr {
-    background: rgb(56, 55, 63);
+    background: #38373f;
     height: 5rem;
     font-size: 1.8rem;
-    /* border-top-right-radius: .8rem;
-    border-top-left-radius: .8rem; */
+   
 }
-
+/* Styling the input field of type-text inside input-div  */
 .input input[type="text"] {
 
-    color: white;
+    color: #ffffff;
     border: none;
     outline: none;
 }
-
+/*Styling the div of all the buttons in calculator */
 .calculator {
     display: grid;
     grid-template-columns: repeat(4, 6rem);
@@ -51,26 +51,27 @@ body {
     border-bottom-right-radius: .8rem;
     border-bottom-left-radius: .8rem;
 }
-
+/*Styling all the buttons in calculator */
 .calculator button {
     font-size: 2rem;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border:none;
-    box-shadow: 2px 2px 1px rgb(129, 125, 125),-2px -2px 1px rgb(157, 147, 147);
-    text-shadow: 1px 2px 2px rgb(11, 4, 67);
-    /* color: white; */
+    outline: none;
+    box-shadow: 2px 2px 1px #817d7d,-2px -2px 1px #9d9393;
+    text-shadow: 1px 2px 2px #0b0443;
+    
 }
-
+/*Styling  the equals button in calculator */
 #EqualBtn {
     width: 18.5rem;
     border-bottom-right-radius: .8rem;
-    /* border-bottom-left-radius: .8rem; */
+   
    
 }
-
+/*Styling  the zero  button in calculator */
 #zeroBtn{
-    /* border-bottom-right-radius: .8rem; */
+   
     border-bottom-left-radius: .8rem;
    
 }

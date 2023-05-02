@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validate Password</title>
+    <!-- CSS code -->
     <style>
+      /* Styling the message para */
         .message{
             font-weight: bold;
             font-size: 1.3rem;
         }
+        /* styling the submit button */
         #btn{
             cursor: pointer;
             background-color: blue;
@@ -22,11 +25,14 @@
     </style>
   </head>
   <body>
+    <!-- Login form -->
     <form id="login-form">
         <h1>Log-In Form</h1>
+        <!-- Email input -->
       <label for="email">Enter Your Email</label>
       <input type="text" name="email" id="email" />
       <br /><br>
+      <!-- Password input -->
       <label for="password">Enter your Password</label>
       <input type="password" name="password" id="password" />
       <br /><br>
@@ -35,8 +41,9 @@
       <p class="message"></p>
       <br>
     </form>
-
+<!-- Js code -->
     <script>
+      //getting all the required html elements
       const form = document.getElementById("login-form");
       const emailInput = document.getElementById("email");
       const passwordInput = document.getElementById("password");
@@ -44,10 +51,12 @@
       const messagePara = document.querySelector(".message");
 
       form.addEventListener("submit", (e) => {
+        //preventing the default behaviour of webpage on submitting
         e.preventDefault();
-        // button.addEventListener("click",()=>{
+       
 
         if (emailInput.value.includes("@") && passwordInput.value.length >= 8) {
+          // success message if emailInput value includes "@" & the password length is equal to or greater than 8
           messagePara.style.color = "green";
           messagePara.textContent = "Valid email and password!";
         }
@@ -56,10 +65,11 @@
           !emailInput.value.includes("@") ||
           passwordInput.value.length < 8
         ) {
+           // error message if emailInput value dosen't include "@" Or the password length is less than 8
           messagePara.style.color = "red";
           messagePara.textContent = "Invalid email or password!";
         }
-    // })
+   
       });
     </script>
   </body>

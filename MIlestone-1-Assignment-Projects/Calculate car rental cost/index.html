@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
     <title>Calculate Car Rental Cost</title>
   </head>
   <body>
+    <!-- Form for calculating car rental cost -->
     <form class="container">
         <label for="car">Select Car</label>
+        <!-- Options for car -->
        <select name="car" id="car">
         <option value="Economy" selected>Economy</option>
         <option value="Midsize">Midsize</option>
         <option value="Luxury">Luxury</option>
        </select>
        <br>
+       <!-- Days input -->
        <label for="days">Days</label>
        <input type="number" name="days" id="days">
        <br>
+       <!--Submit the inputs  -->
        <button type="submit">Submit</button>
        <br>
+       <!-- Paragraph where the total price will be displayed -->
        <p id="para">Total cost is :</p>
     </form>
-
+    <!-- Js file -->
     <script src="./index.js"></script>
   </body>
 </html>

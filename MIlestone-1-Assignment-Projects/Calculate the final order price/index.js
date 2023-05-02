@@ -1,4 +1,5 @@
-let products = [
+let productsInCart = [
+  // array of products
   {
     Unit_Price: 20,
     Quantity: 4,
@@ -25,24 +26,32 @@ let products = [
   },
 ];
 
-// let price=products[0].Unit_Price*products[0].Quantity;
-// console.log(price)
-function calculateTotalPrice(array) {
+//arrow function to calculate the total price
+const calculateTotalPrice=(array) =>{
+  // initially the array of prices is empty and totalPrice is 0
     let priceArray=[]
     let total=0
+    // looping through each product in  the productsInCart-array
   for (let i = 0; i < array.length; i++) {
+    //price of each product
     let price=array[i].Unit_Price*array[i].Quantity;
+    // create an array of all products' prices
     priceArray.push(price);
    
   }
   for(let j in priceArray){
+    // sum of all the prices (each element of priceArray)
    total+=priceArray[j]
   }
-// console.log(priceArray)
-console.log("Total price to pay is : "+total)
+
+let priceToPay="Total price to pay is : "+total
+console.log(priceToPay);
+// returning the total price
+return priceToPay;
+
 
 
 
 }
 
-calculateTotalPrice(products)
+calculateTotalPrice(productsInCart) //passing all the products in customers cart

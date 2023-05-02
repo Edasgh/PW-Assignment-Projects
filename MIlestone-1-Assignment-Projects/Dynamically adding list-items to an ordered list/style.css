@@ -1,0 +1,52 @@
+/* Adding some default css */
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: #0f0f0d;
+
+}
+/* Adding font-family sans-serif to each and every item */
+*{
+    font-family: sans-serif;
+}
+
+/* Styling the container div*/
+.container{
+    margin: auto;
+    width: 50%;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Styling the list-container div*/
+.container .list-container{
+    display: flex;
+    flex-direction: column;
+  
+
+    font-size: 1.3rem;
+   
+}
+/* Styling the add button*/
+.container .add{
+
+    font-size: 1.2rem;
+    background-color: #0e0eb4;
+    color: #ffffff;
+
+    position: absolute;
+    top:9px;
+    right:0;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+
+
+    cursor: pointer;
+}

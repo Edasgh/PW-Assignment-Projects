@@ -1,14 +1,16 @@
+// getting the progressbar div
 const progressBar=document.querySelector(".bar")
-
+//function for changing the width of progressbar and animating after every scroll
 function update() {
     progressBar.style.width=`${(window.scrollY / (document.body.scrollHeight - window.innerHeight)*100)}%`
     /* (The height has been scrolled till now / the total height of the webPage and window combined) */
     requestAnimationFrame(update)
 }
 
-update();
+update(); // calling the function
 
 /* 
+
 
 window.scrollY
 

@@ -1,7 +1,10 @@
+// declaring prompt method
 const prompt=require("prompt-sync")({sigint:true});
-
+// taking input of 2 colors from the user
 let color1=prompt("Enter the first color :");
 let color2=prompt("Enter the second color :");
+
+// using an if-else  statement for color-combinations
 
 if(color1=="red"&& color2=="blue" || color2=="red"&&color1=="blue"){
     console.log("purple")

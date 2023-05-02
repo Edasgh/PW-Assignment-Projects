@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+/* importing Alkatra & Ubuntu font-family from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Applying default styles and ubuntu font-family to body tag */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
+/* Styling the todoform & todo-itemsdiv container */
 .todoDiv{
     display: flex;
     flex-wrap: wrap;
@@ -15,14 +18,15 @@ body{
     gap: 20px;
     margin-top: 40px;
 }
-h1{
+.todoDiv h1{
     font-family: 'Alkatra', cursive;
 }
-label{
+/* Styling all the todo-form elements */
+#todoForm label{
     font-size: 1.5rem;
   
 }
-.todo-input{
+#todoForm .todo-input{
     font-size: 1.11rem;
     padding: .5rem;
     border-radius: .5rem;
@@ -30,7 +34,7 @@ label{
     outline: 1px solid rgb(195, 192, 192);
     font-family: 'Ubuntu', sans-serif;
 }
-button{
+#todoForm button{
     padding: .4rem  .8rem;
     font-size: 1.11rem;
     border: none;
@@ -41,7 +45,7 @@ button{
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
 }
-
+/* Styling the container of all to-do-items */
 .added-todos{
     margin-top: 30px;
     display: flex;
@@ -49,7 +53,7 @@ button{
     gap: 20px;
     width: 30%;
 }
-
+/* Styling the todo element */
 .todo{
     display: flex;
     align-items: center;
@@ -59,11 +63,13 @@ button{
     border-radius: .5rem;
     width: 100%;
 }
-input[type="text"]:read-only:disabled{
+/* Styling the readonly disabled and type-text input field cause it changes in an action */
+.todo input[type="text"]:read-only:disabled{
     cursor:default;
     color: black;
     font-family: 'Ubuntu', sans-serif;
 }
+/* Styling the todo-content */
 .todoContent{
     font-size: 1.3rem;
     width: 80%;
@@ -73,12 +79,12 @@ input[type="text"]:read-only:disabled{
     font-family: 'Ubuntu', sans-serif;
   
 }
-.actionSpan{
+.todo .actionSpan{
     display: flex;
     font-size: 1.1rem;
     gap:12px;
 }
-
+/* Styling the edit-button and delete-button */
 .editBtn,.deleteBtn{
     cursor: pointer;
     font-weight: bold;

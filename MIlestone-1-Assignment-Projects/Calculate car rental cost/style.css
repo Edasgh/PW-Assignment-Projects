@@ -1,3 +1,4 @@
+/*Styling the form */
 form{
     display: flex;
     flex-direction: column;
@@ -8,6 +9,11 @@ form{
 form label{
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+select{
+    cursor: pointer;
+    outline:none;
 }
 
 #car{
@@ -29,6 +35,7 @@ button{
     outline:none;
     font-size: 1.14rem;
 }
+/*Styling the paragraph */
 #para{
     font-size: 1.5rem;
 }

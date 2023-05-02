@@ -1,15 +1,16 @@
 function billSplitter(costOfEachDish,numOfPeople){
-let billToBePaidByEachPerson=costOfEachDish/numOfPeople;
-let totalBill=costOfEachDish;
+    // taking input of the cost of each dish and number of people in a table
+let billToBePaidByEachPerson=costOfEachDish;
+let totalBill=costOfEachDish*numOfPeople;
 
 let payment={
-    "Total bill for this dish is ": totalBill,
+    "Total bill for this table is ": totalBill,
     "Bill to be paid by each person is ": billToBePaidByEachPerson
 }
 
-// console.log("Bill to be paid by each person is :"+billToBePaidByEachPerson);
-// console.log("Total bill is :"+totalBill);
+
 console.log(payment)
+return payment; // returning payment object
 }
 
 let costOfEachDish=200;

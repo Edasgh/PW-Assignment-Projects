@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css">
     <title>TO DO</title>
 </head>
 <body>
+    <!-- the container of todo form , todo-item div  -->
     <div class="todoDiv">
         <h1>Welcome to TODO App</h1>
+        <!-- the todo form -->
         <form id="todoForm">
+            <!-- todo input -->
             <label for="todo-input">Add a to-do :</label>
             <input type="text"  class="todo-input" id="todo-input" placeholder="Add a to-do">
+            <!-- submit the todoform to todo content -->
             <button type="submit">Add</button>
         </form>
-        <div class="added-todos"></div>
+        <!-- all the todo items will be displayed in this div -->
+        <div class="added-todos">
+           <!-- <div class="todo">
+            <input type="text" class="todoContent" readonly disabled value="todo content"/>
+            <span class="actionSpan">
+                <span class="editBtn">Edit</span>
+                <span class="deleteBtn">Delete</span>
+            </span>
+           </div> -->
+        </div>
     </div>
+    <!-- Js file -->
     <script src="./index.js"></script>
 </body>
 </html>

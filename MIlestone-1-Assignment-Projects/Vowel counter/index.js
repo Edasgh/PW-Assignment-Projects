@@ -1,5 +1,7 @@
+// declaring prompt method
 const prompt = require("prompt-sync")({ sigint: true });
 const vowels = ["a", "e", "i", "o", "u"];
+// taking input of name from the user
 let name = prompt("Enter your name : ");
 
 function countVowels(str) {

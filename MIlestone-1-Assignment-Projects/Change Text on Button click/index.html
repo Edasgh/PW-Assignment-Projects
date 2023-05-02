@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Change Text on Button click</title>
+    <!-- Stylesheet -->
     <style>
       .btn{
         cursor: pointer;
@@ -18,12 +19,17 @@
     </style>
 </head>
 <body>
+  <!-- heading -->
     <h1 class="first">The most affordable learning platform</h1>
+    <!-- button which is used here to change heading text -->
         <button class="btn">Click me!</button>
+        <!-- Js code -->
     <script>
+      //getting all the elements
    const button=document.querySelector(".btn");
    const firstHeading=document.querySelector(".first");
   button.addEventListener("click",()=>{
+    // toggle between two texts on button click
     if(firstHeading.textContent=="The most affordable learning platform"){
         firstHeading.textContent="PW Skills"
     }else{
