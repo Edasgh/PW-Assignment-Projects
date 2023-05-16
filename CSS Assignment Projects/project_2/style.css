@@ -1,39 +1,40 @@
-
+/* Adding default styles and font-family to the body */
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
   font-family: "Poppins", sans-serif;
 }
-
+/* Styling the navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding:2rem 3.8rem; */
   padding: .2rem 3.8rem 2.5rem 3.8rem;
 }
-
+/* styling the nav-ul list and list-items of the navbar */
 .nav-ul {
   display: flex;
   gap: 40px;
   align-items: center;
   
 }
-.logoImg{
-  width: 150px;
-}
 .nav-ul li{
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
 }
+/* Styling the logo */
+.logoImg{
+  width: 150px;
+}
+/* Styling the main section */
 main{
     display: flex;
     padding:0rem 3.8rem;
    
 }
+/* Styling the right-section and its image */
 .right{
   width: 110%;
   display: flex;
@@ -42,6 +43,7 @@ main{
 .right img{
   width: 100%;
 }
+/* Styling the left section */
 .left{
     display: flex;
     flex-direction: column;
@@ -50,32 +52,31 @@ main{
     padding:4.5rem  2rem;
     
 }
-.left .h1{
+/* Styling the headings and the paragraph of left-top-div */
+.left-top-div .h1{
     font-size: 3.8rem;
    width: 70%;
-   color:rgb(58, 8, 104);
+   color:#3a0868;
    font-weight: 600;
    
 }
-.left p{
+.left-top-div p{
     text-align: start;
-    color: gray;
+    color: #808080;
 
 }
-.left  .span{
-    color:rgb(105, 26, 180);
+.left-top-div  .span{
+    color:#691ab4;
 }
-
+/* Styling all the buttons */
 button{
-    /* background-color: rgb(117, 23, 210); */
-    background-color: rgb(101 19 183);
-    color: white;
+    background-color: #6513b7;
+    color: #ffffff;
     cursor: pointer;
     border-radius: .77rem;
     border: none;
     outline: none;
     padding: .99rem 1.8rem;
-    /* font-family: sans-serif; */
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.1rem;

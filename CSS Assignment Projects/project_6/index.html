@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
     <!-- adding the poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +16,7 @@
     <title>Project 6</title>
   </head>
   <body>
+    <!-- the navigation bar -->
     <nav class="navbar">
       <img src="./images/beatsLogo.png" alt="logo" class="logo" />
       <ul type="none" class="nav_ul">
@@ -27,11 +29,14 @@
         </li>
       </ul>
     </nav>
-    <section class="first">
-      <div class="first-left-section">
+    <!-- The hero-section -->
+    <section class="hero-section" id="home">
+      <!-- left part of the hero section -->
+      <div class="left-hero-section">
         <img src="./images/mainImage.png" alt="mainImage" class="mainImage" />
       </div>
-      <div class="first-right-section">
+      <!-- Right part of the hero section -->
+      <div class="right-hero-section">
         <img src="./images/onEar.png" alt="onEar" class="onEar" />
         <h1>Beats 3</h1>
         <h2>Overview</h2>
@@ -49,7 +54,8 @@
         </button>
       </div>
     </section>
-    <section class="second">
+    <!-- Brands section -->
+    <section class="brands-section" >
       <a href="#apple"
         ><img src="./images/appleLogo.png" alt="apple_logo" class="apple_logo"
       /></a>
@@ -71,10 +77,13 @@
         <img src="./images/youtubeLogo.png" alt="yt_logo" class="yt_logo" />
       </a>
     </section>
-    <section class="third">
-      <img src="./icons/specsLogo.png" alt="third-top" class="third-top" />
-      <div class="third-left-section">
-        <ul type="none" class="third-section-ul">
+    <!-- Specs section -->
+    <section class="specs-section" id="specs">
+      <!-- image on the top part of specs section -->
+      <img src="./icons/specsLogo.png" alt="specs-top" class="specs-top" />
+      <!-- left part of the specs section -->
+      <div class="specs-left-section">
+        <ul type="none" class="specs-section-ul">
           <li id="bluetooth">
             <img
               src="./icons/bluetooth.png"
@@ -101,7 +110,8 @@
           </li>
         </ul>
       </div>
-      <div class="third-right-section">
+      <!-- the right part of the specs section -->
+      <div class="specs-right-section">
         <img
           src="./images/specsImage.png"
           alt="specsImage"
@@ -109,9 +119,12 @@
         />
       </div>
     </section>
-    <section class="fourth">
-      <img src="./icons/caseLogo.png" alt="caseLogo" class="fourth-top" />
-      <div class="fourth-main-section">
+    <!-- The case section -->
+    <section class="case-section" id="case">
+         <!-- image on the top part of case section -->
+      <img src="./icons/caseLogo.png" alt="caseLogo" class="case-section-top" />
+      <!-- Main part of the case section -->
+      <div class="case-main-section">
         <img src="./images/caseImage.png" alt="caseImage" class="podCase" />
         <div class="case-detail">
           <p>
@@ -127,8 +140,10 @@
         </div>
       </div>
     </section>
-    <section class="fifth">
-      <div class="fifth-left-section">
+    <!-- buy-now section -->
+    <section class="buyNow-section">
+      <!-- the left part of the buy-now section -->
+      <div class="buyNow-left-section">
         <h2>Immerse yourself in your music</h2>
         <p>Buy Now, up to 40% off.</p>
         <button>
@@ -137,12 +152,15 @@
           >
         </button>
       </div>
-      <div class="fifth-right-section">
+       <!-- the right part of the buy-now section -->
+      <div class="buyNow-right-section">
         <img src="./images/buyNowSectionImage.png" alt="buyNowSectionImage" />
       </div>
     </section>
-    <section class="sixth">
-      <img src="./icons/productLogo.png" alt="sixth-top" class="sixth-top" />
+    <!-- products section -->
+    <section class="products-section" id="products">
+      <!-- image on the top part of the products section -->
+      <img src="./icons/productLogo.png" alt="top" class="products-section-top" />
       <div class="products">
         <div class="products-row">
           <div class="product-card">
@@ -230,7 +248,7 @@
         </div>
       </div>
     </section>
-
+<!-- Footer -->
     <footer class="footer">
      <img src="./images/beatsLogo.png" alt="logo" class="footer-logo">
      <ul type="none" class="footer-list">
@@ -267,7 +285,9 @@
        </a>
       </div>
      </div>
-     <img src="./icons/upArrow.png" alt="upArrow" class="upArrow">
+     <a href="#home">
+       <img src="./icons/upArrow.png" alt="upArrow" class="upArrow">
+      </a>
     </footer>
   </body>
 </html>

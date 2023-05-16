@@ -1,20 +1,31 @@
+/* Adding some default styles , color and background-color */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 body {
+  position: relative;
   margin: 0 15vw;
   background: #0f0f10;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 a{
   text-decoration: none;
 }
 /* Designing the navbar */
 .navbar {
+  position:sticky;
+  top: 0;
+  z-index: 2;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  
   display: flex;
   justify-content: space-between;
   padding: 1.6rem 0;
@@ -35,45 +46,57 @@ a{
 .nav_button {
   padding: 0.7rem 2.3rem;
   font-size: 1.1rem;
-  /* background-color: rgb(58, 56, 56); */
   background: #181a1b;
-  border-top: 1px solid rgb(150, 146, 146);
-  border-left: 1px solid rgb(133, 129, 129);
+  border-top: 1px solid #969292;
+  border-left: 1px solid #858181;
   border-radius: 0.5rem;
   outline: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 
-/* Designing the first section */
-.first {
+/* Styling the hero section */
+.hero-section {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.first-left-section {
+/* Styling the left part of the hero section */
+.left-hero-section {
   flex: 1;
 }
-.first-right-section {
+.mainImage {
+  position: absolute;
+  top: -249px;
+  left: 94px;
+  margin-right: 50px;
+  z-index: 3;
+}
+/* Styling the right part of the hero section */
+.right-hero-section {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
-.first-right-section h1 {
+.onEar {
+  position: absolute;
+  top: 50px;
+  right: 41px;
+}
+.right-hero-section h1 {
   margin-top: 8.9rem;
   font-size: 4rem;
 }
-.first-right-section > p {
+.right-hero-section > p {
   line-height: 2.5rem;
   width: 78%;
 }
 
-.first-right-section > button{
-  /* background-color: rgb(58, 56, 56); */
+.right-hero-section > button{
   background: #181a1b;
   padding: 0.99rem 1.5rem;
   cursor: pointer;
@@ -82,27 +105,18 @@ a{
   border-radius: 0.6rem;
   width: 55%;
 }
-.first-right-section > button a{
+.right-hero-section > button a{
   display: flex;
   gap: 20px;
   font-size: 1.1rem;
   justify-content: center;
   align-items: center;
 }
-.mainImage {
-  position: absolute;
-  top: -249px;
-  left: 94px;
-  margin-right: 50px;
-}
-.onEar {
-  position: absolute;
-  top: 50px;
-  right: 41px;
-}
 
-/*Designing second  section*/
-.second{
+
+
+/* Styling the brands section*/
+.brands-section{
     padding-top: 6rem;
     padding-bottom: 5rem;
     display: flex;
@@ -110,32 +124,33 @@ a{
     align-items: center;
     gap: 150px;
 }
-.second img{
+.brands-section img{
     width: 100px;
     cursor: pointer;
 }
 
-/*Designing third  section*/
-.third{
+/* Styling the specs section*/
+.specs-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.third-top{
+.specs-top{
     margin-top: 3rem;
 }
-.third-left-section{
+/* Styling the left part of the specs section */
+.specs-left-section{
   padding-top: 2.3rem;
   margin-left: -24rem;
   padding-bottom: 4rem;
 }
-.third-section-ul{
+.specs-section-ul{
   display: flex;
   flex-direction: column;
   gap:30px;
 }
-.third-section-ul > li > p {
+.specs-section-ul > li > p {
   line-height: 1.9rem;
 }
 .list-heading{
@@ -148,20 +163,21 @@ a{
 width: 180px;
 }
 
-.third-right-section{
+/* Styling the right part of the specs section */
+.specs-right-section{
  position: relative;
 }
 
-.third-right-section img{
+.specs-right-section img{
   position: absolute;
   left: 15px;
   top: -430px;
 }
 
 
-/*Designing fourth  section*/
+/* Styling the case section*/
 
-.fourth{
+.case-section{
   display: flex;
   width: 73%;
   margin: auto;
@@ -169,11 +185,11 @@ width: 180px;
   justify-content: center;
   align-items: center;
 }
-.fourth-top{
+.case-section-top{
   padding: 5rem 0;
 }
-
-.fourth-main-section{
+/* Styling the main part of the case section */
+.case-main-section{
   display: flex;
   gap: 85px;
   justify-content: center;
@@ -190,7 +206,6 @@ line-height: 2.5rem;
 }
 
 .case-detail > button{
-  /* background-color: rgb(58, 56, 56); */
   background: #181a1b;
   padding: 0.99rem 1.5rem;
   cursor: pointer;
@@ -208,33 +223,33 @@ line-height: 2.5rem;
   align-items: center;
 }
 
-/*Designing fifth  section*/
-.fifth{
-
+/* Styling the buy-now section*/
+.buyNow-section{
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(58, 56, 56); */
   background: #181a1b;
   border: none;
   border-radius: .6rem;
   padding: 2.5rem;
   margin:9.8rem 0 ;
 }
-.fifth-left-section{
+
+/* Styling the left part of the buy-now section */
+.buyNow-left-section{
   display: flex;
   gap: 20px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.fifth-left-section > h2{
+.buyNow-left-section > h2{
   width: 64%;
 }
-.fifth-left-section > button{
+.buyNow-left-section > button{
   
-  background-color: black;
+  background-color: #000000;
   padding: 0.99rem 1.5rem;
   cursor: pointer;
   border: none;
@@ -244,19 +259,21 @@ line-height: 2.5rem;
 }
 
 
-.fifth-left-section > button a{
+.buyNow-left-section > button a{
   display: flex;
   font-size: 1.01rem;
   justify-content: center;
   gap: 10px;
 }
-.fifth-right-section img{
+
+/* Styling the right part of the buy-now section */
+.buyNow-right-section img{
   width: 450px;
 }
 
-/*Designing sixth  section*/
+/* Styling the products-section */
 
-.sixth{
+.products-section{
   display: flex;
   width: 70%;
   margin: auto;
@@ -267,7 +284,7 @@ line-height: 2.5rem;
   padding:0 0 8rem 0;
 }
 
-.sixth-top{
+.products-section-top{
   padding:5rem;
   position: absolute;
   top: -111px;
@@ -305,7 +322,6 @@ line-height: 2.5rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
-/* gap: 40px; */
 }
 
 .product-color{
@@ -318,7 +334,7 @@ align-items: center;
   padding:.3rem .6rem;
   border: none;
   border-radius: .4rem;
-  background-color: black;
+  background-color: #000000;
   cursor: pointer;
 }
 
@@ -379,7 +395,7 @@ input[type="email"]{
   font-size: 1.11rem;
 }
 .input > button{
-  background-color: black;
+  background-color: #000000;
   padding: 0.8rem 1.4rem;
   cursor: pointer;
   border: none;

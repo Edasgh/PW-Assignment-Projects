@@ -1,94 +1,84 @@
-@media(min-width:280px){
-   body{
-      background-color: rgb(239, 153, 170);
-   }
-   .two,.three,.four,.five,.six,.seven,.eight{
+/* Adding some default styles and text-align to the body */
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-align: center;
+
+}
+/* Styling the h1 | main heading */
+h1{
+   font-size: 3.5rem;
+}
+/* hiding the second-heading for 320px to 424px screen-size */
+@media(min-width:320px){
+   h2{
       display: none;
    }
    
 }
-@media(min-width:320px){
+
+/* Styling the body and second heading for 425px screen-size */
+@media(min-width:425px){
    body{
-      background-color: rgb(146, 73, 214);
+      background-color: #dc143c;
+   }
+   h2{
+      display: initial;
+   }
+   .one{
+      display: initial;
+   }
+   .two,.three,.four{
+      display: none;
+   }
+   
+}
+/* Styling the body and second heading for 768px screen-size */
+@media(min-width:768px){
+   body{
+background-color: #00ffff;
    }
    .two{
       display: initial;
    }
-   .one,.three,.four,.five,.six,.seven,.eight{
+   .one,.three,.four{
       display: none;
    }
 }
-@media(min-width:375px){
+/* Styling the body and second heading for 1024px screen-size */
+@media(min-width:1024px){
    body{
-      background-color:indianred ;
+background-color:#b08724;
    }
    .three{
       display: initial;
    }
-   .one,.two,.four,.five,.six,.seven,.eight{
-      display: none;
-   }
-}
-@media(min-width:425px){
-   body{
-      background-color: crimson;
-   }
-   .four{
-      display: initial;
-   }
-   .one,.two,.three,.five,.six,.seven,.eight{
-      display: none;
-   }
-   
-}
-@media(min-width:768px){
-   body{
-background-color: cyan;
-   }
-   .five{
-      display: initial;
-   }
-   .one,.two,.three,.four,.six,.seven,.eight{
-      display: none;
-   }
-}
-@media(min-width:1024px){
-   body{
-background-color:rgb(176 135 36);
-   }
-   .six{
-      display: initial;
-   }
-   .one,.two,.three,.four,.five,.seven,.eight{
+   .one,.two,.four{
       display: none;
    }
 
 }
+/* Styling the body and second heading for 1440px screen-size */
 @media(min-width:1440px){
    body{
-background-color: green;
+background-color: #008000;
    }
-   .seven{
+   .four{
       display: initial;
    }
-   .one,.two,.three,.four,.six,.five,.eight{
+   .one,.two,.three{
       display: none;
    }
 }
+/* Styling the body and second heading for screen-sizes above 1440px */
 @media(min-width:1450px){
    body{
-background-color: cyan;
+background-color: #00ffff;
    }
   h2{
    display: none;
   }
 }
-body{
-   text-align: center;
 
-}
-
-h1{
-   font-size: 3.5rem;
-}
 
