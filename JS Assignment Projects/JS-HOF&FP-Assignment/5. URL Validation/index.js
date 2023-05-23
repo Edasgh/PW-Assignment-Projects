@@ -1,10 +1,12 @@
 // creating a regular expression
-let regExp= /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))/gi
-// not done yet
+let regExp = new RegExp(
+  /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/gi
+);
 
-let urlToTest="https://www.pwskills.com/"
-let ndUrl="http://localhost:3000/auth/api"
+// the url to test
+let url = "https://www.pwskills.com/";
 
-console.log(regExp.test(ndUrl));
-console.log(urlToTest.match(regExp));   
 
+let result= regExp.test(url);
+
+console.log(result); // true
