@@ -1,4 +1,4 @@
-const numberChecker=(arr,num)=>{
+const numberChecker=(arr)=>{
  return isPresent=function(num){
    if(arr.includes(num)){
      return true;
