@@ -43,6 +43,8 @@ const listOfBooks = [
   },
 ];
 
+
+//METHOD-1:
 //sorting the array of titles alphabetically
 function sortTitles(arrOfTitles){
   arrOfTitles.sort(function(a,b){
@@ -72,3 +74,21 @@ function alphabeticalOrderOfBooks(arrayOfBooks,callBackFn) {
 
 // calling the function of listOfBooks array
 alphabeticalOrderOfBooks(listOfBooks , sortTitles);
+
+
+
+
+//METHOD-2:
+//for sorting the titles alphabetically
+function logTitles(titles){
+  titles.sort();
+  console.log(titles.join(", "))
+}
+
+//extract titles from each book object and callback to sort the titles alphabetically
+function extractTitles(books,callBackFn){
+  const titles=books.map((book)=>book.title);
+  callBackFn(titles)
+}
+
+extractTitles(listOfBooks,logTitles) // the list will not remain an array anymore | in this sort method

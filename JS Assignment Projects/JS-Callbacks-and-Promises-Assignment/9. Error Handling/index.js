@@ -1,6 +1,8 @@
 //api link
 const link="https://jsonplaceholder.typicode.com/posts/123456789"
 
+//METHOD-1:
+
 //function to fetch data
 async function fetchData(link){
     try {
@@ -13,7 +15,7 @@ async function fetchData(link){
             console.log(data)
         }else{
             // if the status isn't OK
-            new Error(
+          throw new Error(
                 console.log("An error ocurred while fetching data"),
                 console.log(response.status,response.statusText,data)
             )
@@ -27,4 +29,13 @@ async function fetchData(link){
 }
 
 //calling the function for link
-fetchData(link)
+// fetchData(link)
+
+
+//METHOD-2:
+fetch(link).then((response)=>{
+    if(response.statusText!=="OK"){
+        throw new Error("Network response isn't OK")
+    }
+    return response.json()
+})
