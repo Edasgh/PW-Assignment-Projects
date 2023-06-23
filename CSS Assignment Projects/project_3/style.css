@@ -289,7 +289,16 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 990px) {
+  .nav_ul li:nth-child(2){
+    margin-left: 1.75rem;
+  }
+}
 @media screen and (min-width: 1024px) {
+    /* Styling the navbar */
+    .navbar {
+      padding: 1.5rem 2rem;
+    }
   /* Styling the list of the navbar */
   .nav_ul {
     margin-top: 0;
@@ -303,8 +312,11 @@ button:hover {
     cursor: pointer;
     font-weight: 500;
   }
+
+ 
   /* Styling the logo */
   .logo {
+    margin-left: .9rem;
     width: 8rem;
     cursor: default;
   }
