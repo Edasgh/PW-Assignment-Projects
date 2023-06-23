@@ -20,29 +20,48 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome link -->
+    <script
+    src="https://kit.fontawesome.com/a508d8e351.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Project 3</title>
 </head>
 <body>
+  <!-- header -->
+  <header>
+    
   <!-- the navbar which contains a list and a button -->
  <nav class="navbar">
   <!-- This list contains a logo and menu items -->
+  <span class="logo_list_item logo_span"><img src="./images/white-logo.png" alt="logoImg" class="logo"></span>
+
     <ul type="none" class="nav_ul">
         <li class="logo_list_item"><img src="./images/white-logo.png" alt="logoImg" class="logo"></li>
-        <li>Apps</li>
-        <li>DAO</li>
-        <li>Technology</li>
-        <li>Token</li>
-        <li>Contributors</li>
+        <li><a href="#apps"> Apps</a></li>
+        <li> <a href="#dao"> DAO</a></li>
+        <li><a href="#tech">  Technology</a></li>
+        <li><a href="#token"> Token</a></li>
+        <li><a href="#contributors"> Contributors</a></li>
+        <li><button class="nav_button">
+          Buy 1 Token
+      </button></li>
     </ul>
-    <button class="nav_button">
+    <button class="nav_button buyToken">
         Buy 1 Token
     </button>
+    <i class="menu fa-solid fa-bars"></i>
  </nav>   
+</header>
+
  <!-- main section with two headings and a button -->
  <main>
     <span class="h1">Let's build a better tomorrow , together.</span>
     <span class="h2">Buy 1 Token . Join the DAO . Change the world</span>
     <button class="mainBtn">Request Early Access</button>
  </main>
+
+ <!-- Js file -->
+ <script src="./index.js"></script>
 </body>
 </html>
