@@ -59,7 +59,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffffff;
 }
 .logo {
   width: 120px;
@@ -77,7 +77,7 @@ button:hover {
   cursor: pointer;
 }
 .nav-list li:hover{
-  text-shadow: 1px 2px 4px grey;
+  text-shadow: 1px 2px 4px #808080;
  
 }
 
@@ -104,7 +104,7 @@ button:hover {
 }
 .heading-paragraph-container > button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   font-weight: 600;
 }
 .heading-paragraph-container > button:hover {
@@ -344,7 +344,7 @@ main h2 {
 .feature .feature-details .feature-detail-description {
   font-size: 1.11rem;
   line-height: 1.5rem;
-  color: grey;
+  color: #808080;
 }
 
 /* Styling the button */
