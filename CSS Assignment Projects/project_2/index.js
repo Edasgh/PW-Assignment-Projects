@@ -1,9 +1,9 @@
 const menu_bar = document.querySelector(".menu_bar");
-const nav_list = document.querySelector(".nav-list");
+const nav_list = document.querySelector(".nav-ul");
 
 menu_bar.addEventListener("click", () => {
 
-  if (document.body.clientWidth >= 900) {
+  if (document.body.clientWidth >= 950) {
     nav_list.style.display = "flex";
   } else {
     if (nav_list.style.display === "flex") {
@@ -17,7 +17,7 @@ menu_bar.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-  if (this.document.body.clientWidth >= 900) {
+  if (this.document.body.clientWidth >= 950) {
     nav_list.style.display = "flex";
   }else{
     if (nav_list.style.display === "flex") {
@@ -30,7 +30,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-if(document.body.clientWidth<900){
+if(document.body.clientWidth<950){
     if (nav_list.style.display === "flex") {
         menu_bar.classList.add("fa-caret-down");
        

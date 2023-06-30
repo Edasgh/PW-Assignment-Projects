@@ -13,20 +13,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+     <!-- Fontawesome link -->
+     <script
+     src="https://kit.fontawesome.com/a508d8e351.js"
+     crossorigin="anonymous"
+   ></script>
+
     <title>project 2</title>
   </head>
   <body>
     <!-- Creating the navbar with a nav-list and button -->
     <nav class="navbar">
-      <ul type="none" class="nav-ul">
+      <img src="./images/Logo.png" alt="logoImg" class="logoImg outside_img" />
+
+      <ul class="nav-ul">
         <li><img src="./images/Logo.png" alt="logoImg" class="logoImg" /></li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Pricing</li>
-      </ul>
+        <li> <a href="#home"> Home</a></li>
+        <li> <a href="#about"> About</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li> <a href="#portfolio"> Portfolio</a></li>
+        <li> <a href="#pricing"> Pricing</a></li>
       <button class="contact-us">Contact Us</button>
+      </ul>
+      <button class="contact-us outside-btn">Contact Us</button>
+      <i class="fa-solid fa-bars menu_bar outside"></i>
     </nav>
     <!-- The main section which have a left and a right section -->
     <main>
@@ -51,5 +62,7 @@
         />
       </section>
     </main>
+    <!-- Js file -->
+    <script src="./index.js"></script>
   </body>
 </html>
