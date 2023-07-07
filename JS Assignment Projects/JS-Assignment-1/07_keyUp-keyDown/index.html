@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>keyUp-keuDown event </title>
+    <title>keyUp-keyDown event </title>
+    <!-- Stylesheet -->
+    <style>
+      *{
+        font-size: 1.2rem;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container{
+        margin-top: 7rem;
+      }
+      .result{
+        font-weight: 700;
+      }
+    </style>
 </head>
 <body>
-  <script src="./index.js"></script>  
+  <div class="container">
+    <label for="event">Type here something : </label>
+    <input type="text"  id="event">
+    <p class="result">&nbsp;</p>
+  </div>
+ <!-- Js code -->
+  <script>
+    const inputField=document.getElementById("event");
+    const result= document.querySelector(".result");
+
+    inputField.addEventListener("keyup",()=>{
+      result.style.color="blue"
+      result.innerHTML="key-up event is going on"
+    })
+
+    inputField.addEventListener("keydown",()=>{
+      result.style.color="red"
+      result.innerHTML="key-down event is going on"
+    })
+
+
+  </script>
 </body>
 </html>

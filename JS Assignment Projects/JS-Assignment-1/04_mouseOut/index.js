@@ -2,7 +2,7 @@ const container=document.querySelector(".container");
 const h2=document.querySelector("h2");
 
 container.addEventListener("mouseover",()=>{
-    container.style.backgroundColor="blue"
+    container.style.backgroundColor="#101089"
     h2.innerText="Get the cursor out of here"
     h2.style.color="cyan"
 })

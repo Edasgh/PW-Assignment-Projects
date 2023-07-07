@@ -1,4 +1,5 @@
 /* Adding some default styles and a background-color to body */
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +11,10 @@ a{
   color: #fff;
   outline: none;
 }
+
+
 /* For minimum screen-size 280px */
+
 @media (min-width: 280px) {
   /* Styling the navigation bar */
   .navbar {
@@ -18,12 +22,21 @@ a{
     background-color: #111827;
     padding: 1rem 1.5rem;
   }
-  .nav_ul {
+  /* .nav_ul {
     display: none;
+  } */
+
+  .nav_ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    gap: 10px;
   }
   .nav_ul li {
+    padding: 0.4rem 0.8rem;
     cursor: pointer;
   }
+
   .nav_ul li:hover {
     background-color: #712be2;
     border: none;
@@ -142,7 +155,32 @@ a{
     cursor: pointer;
   }
 }
+
+/* For minimum screen-size 500px */
+
+@media (min-width: 500px) {
+  /* Styling the navbar */
+  .hamburger{
+    display: none;
+  }
+  .navbar {
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav_ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .nav_ul li {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
 /* For minimum screen-size 768px */
+
 @media (min-width: 768px) {
   /* Styling the hero section */
   .hero-section {
@@ -165,6 +203,7 @@ a{
 }
 
 /* For minimum screen-size 1024px */
+
 @media (min-width: 1024px) {
   /* Styling the navigation bar */
   .navbar {
@@ -177,13 +216,6 @@ a{
     width: 40px;
     cursor: pointer;
     display: none;
-  }
-  .nav_ul {
-    display: flex;
-    gap: 10px;
-  }
-  .nav_ul li {
-    padding: 0.4rem 0.8rem;
   }
 
   /* Styling the hero section */
