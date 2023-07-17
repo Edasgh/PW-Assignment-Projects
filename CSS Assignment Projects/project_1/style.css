@@ -1,5 +1,6 @@
 /* Adding some  default styles */
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,11 +47,17 @@ button:hover{
 
 /* Styling the navbar */
 .navbar {
+position: sticky;
+top:0;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem;
+  /*making blurr effect with background color */
+  background-color:rgb(95 81 81 / 40%);
+
 }
 /* Styling the logo */
 .logo_img {
@@ -290,11 +297,15 @@ main > h1 {
 
    /* Styling the navbar */
 .navbar {
+position: relative;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
   padding: 2rem ;
+
+  background-color: transparent;
 }
    /* Styling the list inside of the navbar */
 .navbar > .nav-list {

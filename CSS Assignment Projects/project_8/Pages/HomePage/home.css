@@ -1,0 +1,47 @@
+
+/* Adding poppins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Adding some default styles */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width:320px){
+
+    .logo{
+        width: 200px;
+    }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.navbar>ul>li>a{
+    font-size: .9rem;
+    font-weight: 550;
+}
+
+button{
+    background-color: #20BC7E;
+}
+
+}
