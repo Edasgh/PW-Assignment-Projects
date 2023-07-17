@@ -30,7 +30,7 @@ a{
   } */
 
   .nav_ul{
-    display: flex;
+    display: none;
     flex-direction:row;
     justify-content:flex-start;
     align-items:flex-start;
@@ -52,6 +52,14 @@ a{
   .hamburger ,i{
    font-size: 1.57rem;
     cursor: pointer;
+    border: 2px solid #ffff;
+    border-radius: .5rem;
+   
+      padding:.3rem .5rem;
+    
+  }
+  .fa-caret-down{
+    padding:.3rem .5rem;
   }
   /* Styling the hero-section */
   .hero-section {
@@ -169,7 +177,7 @@ a{
   i{
     display: none;
   }
-  .hamburger{
+  .hamburger,i{
     display: none;
   }
   .navbar {

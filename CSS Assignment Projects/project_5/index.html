@@ -125,15 +125,22 @@
       window.addEventListener("resize", () => {
         if (this.document.body.clientWidth >= 500) {
           nav_list.style.display = "flex";
+          menuBar.style.display="none"
         } else {
           if (nav_list.style.display === "flex") {
             menuBar.classList.add("fa-caret-down");
+            menuBar.style.display="initial"
           } else {
             menuBar.classList.remove("fa-caret-down");
+            menuBar.style.display="initial"
           }
         }
       });
 
+
+      if (document.body.clientWidth >= 500) {
+        menuBar.style.display="none"
+      }
       if (document.body.clientWidth < 500) {
         if (nav_list.style.display === "flex") {
           menuBar.classList.add("fa-caret-down");
