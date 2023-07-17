@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a508d8e351.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Project 5</title>
   </head>
   <body>
     <!-- The navbar with a logo and a list -->
     <nav class="navbar">
-      <img src="./images/hambrger.png" alt="hamburger" class="hamburger">
+      <i class="fa-solid fa-bars menu_bar outside hamburger"></i>
       <ul type="none" class="nav_ul">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#technolofies"> Technologies</a></li>
-        <li> <a href="#contact"> Contact Me</a></li>
+        <li><a href="#contact"> Contact Me</a></li>
       </ul>
     </nav>
     <!-- The hero section -->
@@ -31,7 +36,7 @@
           />
           Hi Everyone</span
         >
-        <span class="h1">Eshita Das</span><br>
+        <span class="h1">Eshita Das</span><br />
         <span class="h2">Developer</span>
       </div>
       <!-- Right section of the hero section -->
@@ -46,42 +51,96 @@
     <!-- Projects section -->
     <section class="projects" id="projects">
       <!-- Heading of the projects section -->
-        <h2 class="second-header">Projects</h2>
-        <!-- Top section of the projects section -->
-     <section class="projects-section-top">
-      <!-- div of each project -->
-      <div class="project-1 project">
-        <img src="./images/image.png" alt="project-1">
-        <h3>Project 1</h3>
-      </div>
-      <div class="project-2 project">
-        <img src="./images/image.png" alt="project-2">
-        <h3>Project 2</h3>
-      </div>
-   </section>
-   <!-- Bottom section of the projects section -->
-     <section class="projects-section-bottom">
-       <!-- div of each project -->
-      <div class="project-3 project">
-        <img src="./images/image.png" alt="project-3">
-        <h3>Project 3</h3>
-      </div>
-      <div class="project-4 project">
-        <img src="./images/image.png" alt="project-4">
-        <h3>Project 4</h3>
-      </div>
-     </section>
+      <h2 class="second-header">Projects</h2>
+      <!-- Top section of the projects section -->
+      <section class="projects-section-top">
+        <!-- div of each project -->
+        <div class="project-1 project">
+          <img src="./images/image.png" alt="project-1" />
+          <h3>Project 1</h3>
+        </div>
+        <div class="project-2 project">
+          <img src="./images/image.png" alt="project-2" />
+          <h3>Project 2</h3>
+        </div>
+      </section>
+      <!-- Bottom section of the projects section -->
+      <section class="projects-section-bottom">
+        <!-- div of each project -->
+        <div class="project-3 project">
+          <img src="./images/image.png" alt="project-3" />
+          <h3>Project 3</h3>
+        </div>
+        <div class="project-4 project">
+          <img src="./images/image.png" alt="project-4" />
+          <h3>Project 4</h3>
+        </div>
+      </section>
     </section>
     <!-- Footer section -->
-    <footer class="footer-section">
+    <footer class="footer-section" id="contact">
       <!-- Heading of the footer section -->
       <h2>Contact me</h2>
       <!-- Contact links of the footer section -->
       <section class="contact_links">
-        <img src="./images/github.png" alt="github" title="my github" class="github">
-        <img src="./images/linkedin.png" alt="linkedin" title="my linkedin" class="linkedin">
-        <img src="./images/outlook.png" title="no link here" alt="outlook" class="outlook">
+        <img
+          src="./images/github.png"
+          alt="github"
+          title="my github"
+          class="github"
+        />
+        <img
+          src="./images/linkedin.png"
+          alt="linkedin"
+          title="my linkedin"
+          class="linkedin"
+        />
+        <img
+          src="./images/outlook.png"
+          title="no link here"
+          alt="outlook"
+          class="outlook"
+        />
       </section>
     </footer>
+    <!-- Js File -->
+    <script>
+      const menuBar = document.querySelector("i");
+      const nav_list = document.querySelector(".navbar> .nav_ul");
+
+      menuBar.addEventListener("click", () => {
+        if (document.body.clientWidth >= 500) {
+          nav_list.style.display = "flex";
+        } else {
+          if (nav_list.style.display === "flex") {
+            menuBar.classList.remove("fa-caret-down");
+            nav_list.style.display = "none";
+          } else {
+            menuBar.classList.add("fa-caret-down");
+            nav_list.style.display = "flex";
+          }
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (this.document.body.clientWidth >= 500) {
+          nav_list.style.display = "flex";
+        } else {
+          if (nav_list.style.display === "flex") {
+            menuBar.classList.add("fa-caret-down");
+          } else {
+            menuBar.classList.remove("fa-caret-down");
+          }
+        }
+      });
+
+      if (document.body.clientWidth < 500) {
+        if (nav_list.style.display === "flex") {
+          menuBar.classList.add("fa-caret-down");
+        } else {
+          menuBar.classList.remove("fa-caret-down");
+        }
+      }
+    </script>
   </body>
 </html>

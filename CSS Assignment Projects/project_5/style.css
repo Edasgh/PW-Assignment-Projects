@@ -13,11 +13,14 @@ a{
 }
 
 
-/* For minimum screen-size 280px */
+/* For minimum screen-size 320px */
 
-@media (min-width: 280px) {
+@media (min-width: 320px) {
   /* Styling the navigation bar */
   .navbar {
+    position: sticky;
+    top: 0;
+
     color: #fff;
     background-color: #111827;
     padding: 1rem 1.5rem;
@@ -26,11 +29,14 @@ a{
     display: none;
   } */
 
-  .nav_ul {
+  .nav_ul{
     display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    gap: 10px;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    /* margin-right: 1rem; */
+    gap: 5px;
   }
   .nav_ul li {
     padding: 0.4rem 0.8rem;
@@ -43,8 +49,8 @@ a{
     border-radius: 0.6rem;
     color: #ffffff;
   }
-  .hamburger {
-    width: 40px;
+  .hamburger ,i{
+   font-size: 1.57rem;
     cursor: pointer;
   }
   /* Styling the hero-section */
@@ -160,6 +166,9 @@ a{
 
 @media (min-width: 500px) {
   /* Styling the navbar */
+  i{
+    display: none;
+  }
   .hamburger{
     display: none;
   }
@@ -205,8 +214,10 @@ a{
 /* For minimum screen-size 1024px */
 
 @media (min-width: 1024px) {
-  /* Styling the navigation bar */
+   /* Styling the navigation bar */
   .navbar {
+    position:relative;
+    
     padding: 0.8rem 2rem;
     display: flex;
     justify-content: flex-end;
