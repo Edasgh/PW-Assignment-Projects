@@ -1,5 +1,6 @@
 /* Adding default styles and a background and a font-family to the body */
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +41,8 @@ button:hover {
   /* Styling the header */
   header {
     text-align: center;
+    position: sticky;
+    top:0;
   }
   /* Styling the navbar */
   .navbar {
@@ -229,6 +232,10 @@ button:hover {
 }
 
 @media screen and (min-width: 910px) {
+   /* Styling the header */
+   header {
+    position: relative;
+  }
   /* Styling the navbar */
   .navbar {
     background-color: #000000;
