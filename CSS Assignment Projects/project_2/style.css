@@ -1,5 +1,6 @@
 /* Adding default styles and font-family to the body */
 body {
+  position: relative;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -41,95 +42,23 @@ body {
     border: 2px solid #6513b7;
   }
 
-  /* @media screen and (min-width:320px){ */
-/* Styling the navbar */
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .2rem 3.8rem 2.5rem 3.8rem;
-} */
-
-/* styling the nav-ul list and list-items of the navbar */
-/* .nav-ul {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  
-}
-.nav-ul li{
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-} */
-/* Styling the logo */
-/* .logoImg{
-  width: 150px;
-  margin-right: 1.2rem;
-  cursor: default;
-}
-.nav-ul li:first-child{
-  cursor: default;
-} */
-/* Styling the left section */
-/* .left{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-  padding:4.5rem  2rem;
-  
-} */
-/* Styling the main section */
-/* main{
-  display: flex;
-  padding:0rem 3.8rem;
- 
-} */
-/* Styling the headings and the paragraph of left-top-div */
-/* .left-top-div .h1{
-  font-size: 3.8rem;
-  line-height: 4.8rem;
- width: 70%;
- color:#3a0868;
- font-weight: 600;
-
- 
-} */
-/* .left-top-div p{
-  margin-top: 2rem;
-  text-align: start;
-  color: #808080;
-
-}
-.left-top-div  .span{
-  color:#691ab4;
-}
-.left > button{
-  margin-top: 2rem;
-} */
-/* Styling the right-section and its image */
-/* .right{
-  width: 110%;
-  display: flex;
-  align-items: flex-start;
-}
-.right img{
-  width: 100%;
-} */
-  /* } */
-
 
   @media screen and (min-width: 320px) {
     /* Styling the navbar */
   .navbar {
-    position: relative;
+    position: sticky;
+    top:0;
+
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: .9rem  1.2rem;
-    /* padding: .2rem 3.8rem 2.5rem 3.8rem; */
+
+/* Creating blurr effect using background-color */
+    background-color:rgb(255 253 253 / 40%);
+
   }
   /* styling the nav-ul list and list-items of the navbar */
   .nav-ul {
