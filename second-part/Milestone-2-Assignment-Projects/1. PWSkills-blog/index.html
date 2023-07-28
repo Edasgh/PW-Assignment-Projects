@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PW Skills Blog</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- heading -->
+    <h1>PW Skills Blog</h1>
+    <!-- plus or back-arrow icon -->
+    <i></i>
+
+    <!-- Home section -->
+    <main class="homepage">
+        <!-- card-part -->
+      <div class="card">
+        <img class="card-img" />
+        <p class="title"></p>
+        <p class="description"></p>
+        <button class="read-more">Read </button>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <section class="modal">
+        <!-- modal form -->
+      <form>
+        <input
+          type="text"
+          name="Img_url"
+          class="url"
+          placeholder="Enter image URL"
+        />
+        <input
+          type="text"
+          name="title"
+          class="title"
+          placeholder="Enter Blog Title"
+        />
+        <input
+          type="text"
+          name="description"
+          class="description"
+          placeholder="Enter Blog Description"
+        />
+        <textarea
+          name="blog_body"
+          class="blog_body"
+          cols="25"
+          rows="5"
+          placeholder="Write"
+        ></textarea>
+        <button type="submit">Add Blog</button>
+      </form>
+
+      <!-- cross-icon -->
+      <i></i>
+
+    </section>
+
+    <!-- Read blog -->
+    <section class="read-blog">
+        <!-- blog header -->
+      <div class="header-part">
+        <!-- left-part of blog header | title and desc only -->
+        <div class="header-part-left">
+          <p class="title"></p>
+          <p class="description"></p>
+        </div>
+        <!-- right-part of blog header | blog-img only -->
+        <div class="header-part-right">
+          <img class="blog_img" />
+        </div>
+      </div>
+      <!-- blog body -->
+      <div class="blog">
+        <p class="blog-body"></p>
+      </div>
+    </section>
+
+    <!-- JS file -->
+    <script src="./index.js"></script>
+  </body>
+</html>
