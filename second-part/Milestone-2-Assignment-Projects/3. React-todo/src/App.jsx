@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar"
 import Todos from "./Screens/Todos/Todos"
 import Home from "./Screens/Home/Home"
-// import AddTodo from "./Components/AddTodo/AddTodo"
+// import AddTodoModal from "./Components/AddTodoModal/AddTodoModal"
 
 const App=() =>{
   
@@ -12,7 +12,7 @@ const App=() =>{
      <BrowserRouter>
      <Navbar/>
 
-     {/* <AddTodo/> */}
+     {/* <AddTodoModal/> */}
      {/* plan to add a modal opener prop here */}
      <Routes>
       <Route exact path="/" element={<Home/>}  />
