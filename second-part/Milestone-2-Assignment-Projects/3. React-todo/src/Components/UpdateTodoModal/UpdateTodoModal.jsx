@@ -1,10 +1,12 @@
 import React from 'react'
 import "./UpdateTodoModal.css"
+import AddTodo from '../AddTodoModal/AddTodoModal'
 
-const UpdateTodoModal = () => {
+
+const UpdateTodoModal = ({title, status}) => {
   return (
     <>
-    
+    <AddTodo title={title} status={status} isEdit={true} />
     
     
     </>

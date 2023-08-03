@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
+import AddTaskBtn from '../Elements/AddTaskBtn/AddTaskBtn'
 
-// import AddTodoModal from '../AddTodoModal/AddTodoModal'
 
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
     </ul>
     <ul className="other-ul">
 
-   <button title='Add a Task'>Add a Task  &nbsp;<i className="fa-solid fa-square-plus plus-icon"></i></button>
+   <AddTaskBtn btnCls="add-task" />
 
    {/* <i className="fa-solid fa-bars"></i> */}
     </ul>

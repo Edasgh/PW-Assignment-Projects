@@ -34,24 +34,3 @@
     font-size: 1.11rem;
 }
 
-.navbar>ul>button{
-    font-size: 1rem;
-    font-weight: 750;
-    padding: 0;
-   
-    background-color: transparent;
-    
-    border: none;
-    outline: none;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-.navbar>ul>button>.plus-icon{
-  font-size: 2rem;
-  
-
-}

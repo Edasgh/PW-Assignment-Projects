@@ -1,9 +1,9 @@
 
-.modal{
+.modal,.modal-2{
     position: absolute;
     width: 280px;
     height:300px;
-    margin: -1.8rem 0 0 38rem;
+    margin: -1.8rem 0 0 40rem;
     padding: 1rem;
     border: 1px solid purple;
     border-radius: .4rem;
@@ -66,14 +66,14 @@
 
 
 
-.modal>.cross-icon{
+.modal>.cross-icon,.modal-2>.cross-icon{
     font-size: 1.4rem;
     transition: all .4s ease-in;
     cursor: pointer;
 }
 
 
-.modal>.cross-icon:hover{
+.modal>.cross-icon:hover,.modal-2>.cross-icon:hover{
     transform:scale(1.2);
 }
 

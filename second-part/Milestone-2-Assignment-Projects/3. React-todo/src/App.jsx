@@ -1,28 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Navbar from "./Components/Navbar/Navbar"
-import Todos from "./Screens/Todos/Todos"
-import Home from "./Screens/Home/Home"
-// import AddTodoModal from "./Components/AddTodoModal/AddTodoModal"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const App=() =>{
+import Navbar from "./Components/Navbar/Navbar";
+import Todos from "./Screens/Todos/Todos";
+import Home from "./Screens/Home/Home";
+import AddTodoModal from "./Components/AddTodoModal/AddTodoModal"
+
+
+const App = () => {
   
 
   return (
     <>
-     <BrowserRouter>
-     <Navbar/>
-
-     {/* <AddTodoModal/> */}
-     {/* plan to add a modal opener prop here */}
-     <Routes>
-      <Route exact path="/" element={<Home/>}  />
-      <Route exact path="/todos" element={<Todos/>} />
-     </Routes>
-     
-     </BrowserRouter>
-        
+      <BrowserRouter>
+        <Navbar />
+        <AddTodoModal/>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/todos" element={<Todos />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
