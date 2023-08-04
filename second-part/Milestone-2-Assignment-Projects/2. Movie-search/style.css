@@ -1,0 +1,81 @@
+/* Adding some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+  background-color: #e9d7fa;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > input {
+  font-size: 1.2rem;
+
+  padding: 0.4rem 0.8rem;
+  outline: none;
+}
+
+/* Styling the movies section */
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 2rem;
+
+  transition: all 0.9s ease-in;
+}
+
+/* Styling each movie-card */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+
+  width: 320px;
+  height: 415px;
+  padding: 2rem;
+  background-color: #e9d7fa;
+
+  transition: all 0.8s ease-in;
+}
+.movie-card > .movie-title {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  font-weight: 750;
+  color: black;
+}
+
+.movie-card > img {
+  width: 250px;
+  height: 270px;
+}
+
+.movie-card > button {
+  font-size: 1.1rem;
+  font-weight: 650;
+
+  background-color: #03331d;
+  color: #ffff;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}

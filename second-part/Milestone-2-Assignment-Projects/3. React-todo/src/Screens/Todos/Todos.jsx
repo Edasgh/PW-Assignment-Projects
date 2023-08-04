@@ -27,6 +27,7 @@ const Todos = () => {
               id="update-status"
               onClick={() => {
               console.log(item)
+              
                
               }}
             >
