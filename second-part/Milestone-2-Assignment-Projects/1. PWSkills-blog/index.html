@@ -14,76 +14,133 @@
     ></script>
   </head>
   <body>
-    <!-- heading -->
-    <h1>PW Skills Blog</h1>
-    <!-- plus or back-arrow icon -->
-    <i></i>
+    <!-- header part -->
+    <header>
+      <!-- heading -->
+      <h1>PW Skills Blog</h1>
+      <!-- plus or back-arrow icon -->
+      <i class="fa-solid fa-plus plus-icon"></i>
+    </header>
 
     <!-- Home section -->
     <main class="homepage">
       <!-- card-part -->
-      <div class="card">
-        <img class="card-img" />
-        <p class="title"></p>
-        <p class="description"></p>
+      <!-- <div class="card">
+        <img
+          class="card-img"
+          src="https://images.pexels.com/photos/15863044/pexels-photo-15863044/free-photo-of-monitor-screen-with-openai-logo-on-black-background.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="title"
+        />
+        <p class="title">ChatGPT caused a girl losing her job</p>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
         <button class="read-more">Read</button>
-      </div>
+      </div> -->
     </main>
 
-    <!-- Modal -->
-    <section class="modal">
-      <!-- modal form -->
-      <form>
-        <input
-          type="text"
-          name="Img_url"
-          class="url"
-          placeholder="Enter image URL"
-        />
-        <input
-          type="text"
-          name="title"
-          class="title"
-          placeholder="Enter Blog Title"
-        />
-        <input
-          type="text"
-          name="description"
-          class="description"
-          placeholder="Enter Blog Description"
-        />
-        <textarea
-          name="blog_body"
-          class="blog_body"
-          cols="25"
-          rows="5"
-          placeholder="Write"
-        ></textarea>
-        <button type="submit">Add Blog</button>
-      </form>
+    <!-- modal container -->
+    <section class="modal-container">
+      <!-- Modal -->
+      <div class="modal">
+        <!-- modal form -->
 
-      <!-- cross-icon -->
-      <i></i>
+        <form id="add-blog">
+          <input
+            type="text"
+            name="Img_url"
+            class="url"
+            placeholder="Enter image URL"
+            required
+          />
+          <input
+            type="text"
+            name="title"
+            class="title"
+            placeholder="Enter Blog Title"
+            required
+          />
+          <input
+            type="text"
+            name="description"
+            class="description"
+            placeholder="Enter Blog Description"
+            required
+          />
+          <textarea
+            name="blog_body"
+            class="blog_body"
+            cols="25"
+            rows="5"
+            placeholder="Write.."
+            required
+          ></textarea>
+          <button type="submit">Add Blog</button>
+        </form>
+
+        <!-- cross-icon -->
+        <i class="fa-solid fa-xmark cross-icon"></i>
+      </div>
     </section>
 
-    <!-- Read blog -->
-    <section class="read-blog">
-      <!-- blog header -->
-      <div class="header-part">
-        <!-- left-part of blog header | title and desc only -->
-        <div class="header-part-left">
-          <p class="title"></p>
-          <p class="description"></p>
+    <!-- Read blog container-->
+    <section class="read-blog-container">
+      <section class="blog-header">
+        <h2>PW Skills Blog</h2>
+        <i class="fa-solid fa-arrow-left-long left-arrow"></i>
+      </section>
+      <!-- Read blog -->
+      <section class="read-blog">
+        <!-- blog header -->
+        <!-- <div class="header-part">
+          //left-part of blog header | title and desc only
+          <div class="header-part-left">
+            <p class="title">ChatGPT caused a girl losing her job</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              voluptatem officia ducimus!
+            </p>
+          </div>
+         // right-part of blog header | blog-img only
+          <div class="header-part-right">
+            <img
+              class="blog_img"
+              src="https://images.pexels.com/photos/15863044/pexels-photo-15863044/free-photo-of-monitor-screen-with-openai-logo-on-black-background.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="title"
+            />
+          </div>
         </div>
-        <!-- right-part of blog header | blog-img only -->
-        <div class="header-part-right">
-          <img class="blog_img" />
-        </div>
-      </div>
-      <!-- blog body -->
-      <div class="blog">
-        <p class="blog-body"></p>
-      </div>
+        //blog body
+        <div class="blog">
+          <p class="blog-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+            ducimus in. Laboriosam, hic! Placeat aliquid, molestiae esse omnis
+            facilis earum repellat magnam fugit doloremque? Animi aliquam
+            exercitationem voluptate, voluptatum maiores odit ex consequatur
+            earum dolorem accusamus ullam labore at ratione corrupti expedita
+            quae quidem corporis, sunt hic fugit. Ab eum illo cupiditate alias
+            ad perspiciatis, quos amet id officiis aliquam deserunt at earum
+            expedita nobis. Autem dolore ipsa et suscipit pariatur ipsum commodi
+            maxime laboriosam sunt sapiente dolorem omnis ex, nemo modi, iure
+            necessitatibus laudantium minus deleniti. Nulla odio culpa suscipit.
+            Ea optio eum assumenda illo dolores aliquam, dignissimos totam
+            ducimus dolor maiores quod animi? Neque laboriosam exercitationem
+            natus qui molestias distinctio animi consectetur rem modi, libero
+            aliquam eum sint! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Voluptatibus aspernatur in perspiciatis quos
+            aliquid corporis nihil consequuntur earum, omnis, dolores et sit
+            deleniti libero autem ipsum iste suscipit magni! Maiores nihil
+            pariatur optio nesciunt ex voluptate doloremque. Similique eius
+            voluptatem reiciendis corporis praesentium unde quis laborum ipsa
+            inventore nostrum quisquam itaque quidem ex voluptas quasi, sapiente
+            magni aperiam neque saepe culpa totam non? Dolore, iusto. Esse eos
+            eum accusantium consequatur libero nihil tempora vero eveniet quia!
+            Ea minima dolor iusto necessitatibus porro accusamus tempora
+            praesentium alias molestiae, quaerat voluptatibus ipsam, assumenda
+            doloribus quam obcaecati quas quo, aut voluptas omnis aliquid.
+          </p>
+        </div> -->
+      </section>
     </section>
 
     <!-- JS file -->
