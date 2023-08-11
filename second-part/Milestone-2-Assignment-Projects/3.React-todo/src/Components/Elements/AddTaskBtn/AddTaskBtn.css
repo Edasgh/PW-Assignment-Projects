@@ -1,0 +1,31 @@
+.add-task,
+.add-todo {
+  font-weight: 750;
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.add-task {
+  font-size: 1rem;
+}
+
+.add-todo {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.add-task > .plus-icon,
+.add-todo > .plus-icon {
+  font-size: 2rem;
+}
+
+

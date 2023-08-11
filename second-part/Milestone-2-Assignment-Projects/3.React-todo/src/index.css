@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+
+  cursor: pointer;
+
+  font-size: inherit;
+}
+
+i {
+  font-size: inherit;
+}
+
+.Pending {
+  font-weight: 750;
+  color: #800080;
+}
+
+.Done {
+  font-weight: 750;
+  color: #007673;
+}
