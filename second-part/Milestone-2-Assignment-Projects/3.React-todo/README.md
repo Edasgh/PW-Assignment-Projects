@@ -3,6 +3,13 @@
 ## Description : 
 This project lets the user add a todo-element to the app and saves it to the localStorage.
 
+### In the webpage : 
+* In the navigation bar, there are four elements : logo to navigate to the home page ("/"), home to navigate to "/", todos to navigate to "/todos" and an "add-todo" button.
+
+* The "home" menu navigates to the "home" page where user can see an "add-todo" button and the todos section containing all the todos if any or a heading "No Items Found". The "todos" menu navigates to the "todos" page where user can only see the todos section containing todos or simply the "No Items Found" heading.
+
+
+
 ### Process :
 
 * To add a todo, user clicks the add-todo button(on the home-page or on the navigation bar) and the app opens a modal with a form to take input of the todo-title [input-type = text] and todo-status [input type = option (two options: "pending" and "done" ; default "pending")] from the user. After filling the form, when user submits the form [clicks the add-todo button] the page reloads and now the user can see his/her added todo on the home-page or in the todos-page. The todo-element gets saved to the localStorage as an element of  "todos" array[pushes that element to the "todos" array].
