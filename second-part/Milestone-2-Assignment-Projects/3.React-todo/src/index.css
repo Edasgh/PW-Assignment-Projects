@@ -1,5 +1,8 @@
+/* Importing poppins font-family */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
+/* Some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -32,12 +35,17 @@ i {
   font-size: inherit;
 }
 
-.Pending {
+/* Styling the pending and done status */
+
+
+.Pending ,.Done {
   font-weight: 750;
+}
+
+.Pending {
   color: #800080;
 }
 
 .Done {
-  font-weight: 750;
   color: #007673;
 }

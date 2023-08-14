@@ -1,10 +1,11 @@
 import React from 'react'
-import "./AddTaskBtn.css"
+import "./AddTaskBtn.css" // stylesheet
 import {openOrHideModal} from "../../../hooks/OpenOrHideModal"
 
 
 
 const AddTaskBtn = ({btnCls}) => {
+  // open or hide the modal if user clicks the add-todo button
 const handleClick=()=>{
   openOrHideModal();
 }

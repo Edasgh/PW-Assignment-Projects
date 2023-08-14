@@ -1,4 +1,4 @@
-// functions to load , save and remove todos
+// functions to load, save, remove and edit todos
 
   export const loadTodos = () => {
     try {
@@ -35,7 +35,7 @@
   }
   export const editTodo=(id,title,status)=>{
     let newTodos=loadTodos();
-    //Logic to edit note in client
+    //Logic to edit todo in client
     for (let i = 0; i < newTodos.length; i++) {
       const element = newTodos[i];
       if (newTodos.indexOf(element) === id) {

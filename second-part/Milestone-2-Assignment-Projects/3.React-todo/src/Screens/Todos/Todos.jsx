@@ -1,22 +1,24 @@
 import React, { useState } from "react";
-import "./Todos.css";
+import "./Todos.css";// stylesheet
 import { editTodo, loadTodos, removeTodo } from "../../hooks/localStorage";
 
 import { openOrHideEditModal} from "../../hooks/OpenOrHideModal";
 
 
 const Todos = () => {
+  // getting all the todo-elements
   const todoItems = loadTodos() || [];
 
   // getting id , title and status to update todo-status
   const [todoId, setTodoId]=useState(undefined);
   const [todoTitle, setTodoTitle] = useState("");
   const [todoStatus, setTodoStatus]=useState("Pending");
-  // setting the classname of status span to status-value
+
+  // setting className of the status as per user input of status
   const [classNm, setClassNm] = useState(todoStatus);
 
   //function to edit the todo-item
-  const handleSubmit = (e) => {
+  const handleEdit = (e) => {
     e.preventDefault();
    editTodo(todoId,todoTitle,todoStatus);
     openOrHideEditModal();
@@ -25,12 +27,14 @@ const Todos = () => {
 
   return (
     <>
-    <div className="edit-modal">
+    {/* Update-modal element */}
+    <div className="edit-modal update-modal">
+      {/* form to update the todo  */}
         <form
-          className="edit-modal-form"
+          className="edit-modal-form update-modal-form"
           id="edit-todo"
           onSubmit={(e) => {
-            handleSubmit(e);
+            handleEdit(e);
           }}
         >
          
@@ -65,10 +69,11 @@ const Todos = () => {
       </div>
 
 
-      <div className="todos">
-
+     {/* Todos section */}
+      <section className="todos">
         {todoItems.length !== 0 ? (
           todoItems.map((item, index) => (
+            // todo element
             <div className="todo" key={index}>
               <p className="title">
                 <span className="index">{index + 1}. </span>
@@ -105,7 +110,7 @@ const Todos = () => {
         ) : (
           <h1>No Items Found</h1>
         )}
-      </div>
+      </section>
     </>
   );
 };

@@ -11,8 +11,9 @@ const Home = () => {
   
   return (
     <>
+    {/* AddTodo button */}
        <AddTaskBtn btnCls="add-todo" />
-  
+  {/* Todos component or screen */}
       <Todos />
     </>
   );

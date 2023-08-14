@@ -1,4 +1,4 @@
-
+/* Styling the add-todo-modal */
 .modal{
     position: fixed;
     top: 0;
@@ -12,7 +12,7 @@
     z-index: -10;
 }
 
-
+/* Styling the add-todo-modal-form and its elements */
 .modal-form{  
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
 }
 
 
-
+/* Styling the cross-icon */
 .cross-icon{
     background-color: white;
     padding: 1.2rem 1.5rem;

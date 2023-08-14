@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 
-import "./AddTodoModal.css";
+import "./AddTodoModal.css"; // stylesheet
 import {openOrHideModal} from "../../hooks/OpenOrHideModal"
 import { saveTodo } from "../../hooks/localStorage";
 
 
 const AddTodo = () => {
 
-
+// setting className of the status as per user input
   const [classNm, setClassNm] = useState("Pending");
 
+  //initial state of todo input fields when user didn't give any input
   const [todoItem, setTodoItem] = useState({
     title: "",
     status:"Pending",
   });
   
-  const handleSubmit = (e) => {
+  // function to add a todo
+  const handleAddTodo = (e) => {
     e.preventDefault();
     console.log(todoItem);
     saveTodo(todoItem);
@@ -30,7 +32,7 @@ const AddTodo = () => {
           className="modal-form"
           id="add-todo"
           onSubmit={(e) => {
-            handleSubmit(e);
+            handleAddTodo(e);
           }}
         >
           <label htmlFor="title">Add Todo Title : </label>

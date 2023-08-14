@@ -1,3 +1,4 @@
+/* Styling the edit-todo modal or update-todo modal and its elements */
 .edit-modal {
   position: fixed;
   top: 0;
@@ -72,6 +73,9 @@
   visibility: visible;
   z-index: 10;
 }
+
+
+/* Styling the todos section and its elements */
 
 .todos {
   margin: 2rem;

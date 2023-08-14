@@ -1,5 +1,7 @@
+/* Importing the "Lumanosimo" font */
 @import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
 
+/* Styling the logo of the app */
 .nav-logo > a {
   font-family: "Lumanosimo", cursive;
 }
@@ -10,7 +12,9 @@
   font-weight: 800;
 }
 
+/* For screen width 300px to 490px */
 @media screen and (min-width: 300px) {
+  /* Styling the navbar and its elements */
   .navbar {
     position: sticky;
     top: 0;
@@ -47,7 +51,9 @@
   }
 }
 
+/* For screen width 490px to device-width */
 @media screen and (min-width: 490px) {
+    /* Styling the navbar and its elements */
   .navbar {
     display: flex;
     flex-direction: row;
