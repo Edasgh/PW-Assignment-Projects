@@ -1,8 +1,11 @@
+/* Importing the poppins font and applying */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
 }
+
+/* Styling the header portions */
 
 header,
 .read-blog-container > .blog-header {
@@ -15,12 +18,15 @@ header,
   padding: 1rem 1rem 1rem 2rem;
 }
 
+/* Styling the plus-idon, cross-icon and left-arrow icon */
 .plus-icon,
 .cross-icon,
 .left-arrow {
   font-size: 1.7rem;
   cursor: pointer;
 }
+
+/* Styling the homepage and its components */
 
 .homepage {
   display: flex;
@@ -80,6 +86,7 @@ header,
 
 
 
+/* Styling the add-todo-modal and read-blog modal container */
 
 .modal-container,
 .read-blog-container {
@@ -102,6 +109,7 @@ header,
   z-index: 10;
 }
 
+/* Styling the add-blog modal and its elements */
 .modal {
   display: flex;
   flex-direction: row;
@@ -152,10 +160,13 @@ header,
   color: #ffff;
 }
 
+
+/* Styling the read-blog modal and its components */
+
 .read-blog-container {
   background: #fff;
   overflow-x:hidden;
- overflow-y: scroll;
+ overflow-y: auto;
 
 }
 
@@ -213,4 +224,7 @@ header,
 .blog {
   padding: 0 1.3rem 1.2rem 1.3rem;
   font-size: 1.1rem;
+}
+.blog>.blog-body {
+ width: 90vw;
 }

@@ -7,7 +7,7 @@ const closeModalBtn = document.querySelector(".cross-icon");
 const addBlogForm = document.getElementById("add-blog");
 // getting all input fields in add-blog-modal
 const imgUrlInput = addBlogForm.querySelector(".url");
-const titleInput = addBlogForm.querySelector(".title");
+const titleInput = addBlogForm.querySelector("#title");
 const descrInput = addBlogForm.querySelector(".description");
 const blogBodyInput = addBlogForm.querySelector(".blog_body");
 
@@ -50,6 +50,7 @@ const removeBlog = (id) => {
   window.location.reload();
 };
 
+//adding some default blogs
 const defaultBlogs=[
     
     {
@@ -106,12 +107,14 @@ addBlogForm.onsubmit = function (e) {
   modalContainer.classList.remove("modal-container-opened");
 };
 
+// function to get all the blogs from localStorage and get default blogs
 async function getBlogs() {
   const loadedBlogs = await loadBlogs() || [];
   const blogs = [ ...defaultBlogs,
     ...loadedBlogs,
   ];
 
+  // for every blog element create a div and apply their respective styles
   blogs.forEach((blog) => {
     const blogCard = document.createElement("div");
     blogCard.classList.add("card");
@@ -153,8 +156,10 @@ async function getBlogs() {
   });
 }
 
+//calling the function to get all the blogs
 getBlogs();
 
+// if user clicks the back-button, open the read-blog page or modal
 backBtn.onclick = function () {
   readBlogPage.classList.remove("read-blog-container-opened");
 };
