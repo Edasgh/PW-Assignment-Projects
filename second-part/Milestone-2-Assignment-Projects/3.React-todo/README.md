@@ -24,27 +24,27 @@ This project lets the user add a todo-element to the app and saves it to the loc
 
 * Inside src folder , there are another three folders : "Components", "Screens" and "hooks" 
 
-        ** "Screens" folder is created for different screens or pages in the app
+        * "Screens" folder is created for different screens or pages in the app
         and, "Components"  folder is created for different components needed in a page in this app
 
-        ** A folder named "Elements" is created inside the "Components" folder.
+        * A folder named "Elements" is created inside the "Components" folder.
         "Elements" folder is created to contain different elements needed for a component.
 
-        ** "hooks" folder is created to use custom functions as a hook for different components and pages or screens
+        * "hooks" folder is created to use custom functions as a hook for different components and pages or screens
 
 * The "Components" folder contains another three  folders : "Navbar", "AddTodoModal" and "Elements"(mentioned above).
 
-        ** The "Navbar" folder contains two files "Navbar.jsx"(contains the main code of "Navbar" component [the navigation bar of the app]) and "Navbar.css"(contains the stylesheet for the "Navbar" component),
+        * The "Navbar" folder contains two files "Navbar.jsx"(contains the main code of "Navbar" component [the navigation bar of the app]) and "Navbar.css"(contains the stylesheet for the "Navbar" component),
 
-        ** And, the "AddTodoModal" folder contains two files "AddTodoModal.jsx"(contains the main code of "AddTodoModal" component [the modal to be opened if user clicks add-todo button,this modal contains a form with two input fields : todo-title (text input) and todo-status(option input) and a submit button]) and "AddTodoModal.css"(contains the stylesheet for the "AddTodoModal" component),
+        * And, the "AddTodoModal" folder contains two files "AddTodoModal.jsx"(contains the main code of "AddTodoModal" component [the modal to be opened if user clicks add-todo button,this modal contains a form with two input fields : todo-title (text input) and todo-status(option input) and a submit button]) and "AddTodoModal.css"(contains the stylesheet for the "AddTodoModal" component),
 
-        ** The "Elements" folder contains a folder "AddTaskBtn" (AddTodo button) which contains two files "AddTaskBtn.jsx"[contains the main code of the add-todo button and customised by  class-names in case of navigation bar and the home-page] and, "AddTaskBtn.css"[contains the css code of the "AddTaskBtn" element]
+        * The "Elements" folder contains a folder "AddTaskBtn" (AddTodo button) which contains two files "AddTaskBtn.jsx"[contains the main code of the add-todo button and customised by  class-names in case of navigation bar and the home-page] and, "AddTaskBtn.css"[contains the css code of the "AddTaskBtn" element]
 
 * The "Screens" folder contains another two folders :"Home" and "Todos"
 
-        ** The "Home" folder contains one file : "Home.jsx"[contains the code of the home-page where the add-todo button and another screen todos is present]
+        * The "Home" folder contains one file : "Home.jsx"[contains the code of the home-page where the add-todo button and another screen todos is present]
 
-        ** The "Todos" folder contains two files: "Todos.jsx"[contains the code of the todos page containing all the todo-elements and the update-todo modal] and "Todos.css"[contains the css code which applies to each todo-element and the update-todo-modal]
+        * The "Todos" folder contains two files: "Todos.jsx"[contains the code of the todos page containing all the todo-elements and the update-todo modal] and "Todos.css"[contains the css code which applies to each todo-element and the update-todo-modal]
 
 * The "hooks" folder contains two files :"localStorage.js"[contains the functions to get, add, update and delete todo elements from the app as well as from the localStorage] and "OpenOrHideModal.js" [contains the functions to open or hide (if opened then hides and if hidden then opens the modal) the add-todo modal and the update-todo-modal]
 
