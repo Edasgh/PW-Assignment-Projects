@@ -1,36 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
 
-.navbar{
-    position:sticky;
-    top:0;
+.nav-logo > a {
+  font-family: "Lumanosimo", cursive;
+}
+
+.nav-logo {
+  margin-right: 1.4rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 300px) {
+  .navbar {
+    position: sticky;
+    top: 0;
     margin-bottom: 2rem;
     padding: 1.1rem 1.35rem;
-   background-color: #f5e1f5;
-    
+    background-color: #f5e1f5;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .nav-ul,
+  .other-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 1.11rem;
+  }
+
+  .menu {
+    display: flex;
+    position: absolute;
+    right: 28px;
+    top: 23px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 490px) {
+  .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-}
-.navbar>ul>h2>a{
-    font-family: 'Lumanosimo', cursive;
-    /* text-shadow: 2px 2px white; */
-}
+    gap: 16px;
+    flex-wrap: wrap;
+  }
 
-.navbar>ul>h2{
-   margin-right: 1.4rem;
-}
-
-.navbar>ul{
+  .nav-ul,
+  .other-ul {
     display: flex;
     flex-direction: row;
     gap: 17px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  }
 
-
-   
-    font-size: 1.11rem;
+  .menu {
+    display: none;
+  }
 }
-
