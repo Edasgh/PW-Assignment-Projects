@@ -8,7 +8,7 @@
     * The blog application has two main pages: the home page and the blog page.
     On the home page, users are able to see a list of all existing blog posts with their titles and brief summaries.
 
-    * Users are able to click on a blog post to view its full content on a separate page. On header There is a “+” icon to add new blog by clicking on that a modal should open.
+    * Users are able to click on a blog post to view its full content on a separate page [a modal actually]. On header There is a “+” icon to add new blog by clicking on that a modal should open.
 
     * The add blog modal has a form with fields to input the blog title, blog poster image Url, description and blog content.
 
