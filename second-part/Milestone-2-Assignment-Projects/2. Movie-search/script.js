@@ -1,6 +1,7 @@
 // omdb apiKey
 const apiKey = "b3d8a02c";
-
+//initializing the searchItem
+let searchTerm="avenger";
 // movies section
 const moviesSection = document.querySelector(".movies");
 
@@ -11,7 +12,7 @@ const searchBar = document.querySelector(".search-box");
 const getMovies = async () => {
   try {
     const movies = await fetch(
-      `http://www.omdbapi.com/?s=avenger&apikey=${apiKey}`
+      `http://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}`
     );
     const data = await movies.json();
     // return all the elements of search array
