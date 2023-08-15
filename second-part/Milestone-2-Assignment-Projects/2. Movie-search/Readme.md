@@ -16,7 +16,7 @@ input box. Upon receiving the user's input, the application does fetch movie dat
 
 ### Objectives:
 
-  + Registered on the OMDB API website to obtain your API key. The API key will be required to make requests to the
+  + Registered on the OMDB API website to obtain an API key. The API key will be required to make requests to the
       OMDB API.
 
   + Set up a new HTML file and named it "index.html".
