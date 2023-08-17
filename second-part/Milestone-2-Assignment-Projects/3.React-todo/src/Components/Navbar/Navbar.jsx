@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css"; // stylesheet
 import AddTaskBtn from "../Elements/AddTaskBtn/AddTaskBtn";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,13 +9,13 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="nav-ul" type="none">
           <p className="nav-logo nav-logo-inside">
-            <a href="/">myTodos</a>
+            <Link to="/">myTodos</Link>
           </p>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/todos">Todos</a>
+            <Link to="/todos">Todos</Link>
           </li>
         </ul>
         <ul className="other-ul">
