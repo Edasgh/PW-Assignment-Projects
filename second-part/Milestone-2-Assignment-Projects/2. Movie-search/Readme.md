@@ -1,5 +1,7 @@
 # Movie-search Application : (Fully Responsive)
 
+## Live Link : https://assignment-movie-search-4cf4b2.netlify.app/
+
 ## Description
 
 This is a movie search application that allows users to search for any movie using an

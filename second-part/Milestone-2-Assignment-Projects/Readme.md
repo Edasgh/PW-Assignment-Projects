@@ -16,4 +16,4 @@
 ## 3. React Todo App:
   * Repo link : https://github.com/Edasgh/PW-Skills-FSWD-Assignment-Projects/tree/second-part/second-part/Milestone-2-Assignment-Projects/3.React-todo
 
-  * Live link : will be updated sortly
+  * Live link : https://assignment-react-todo-a18370.netlify.app/

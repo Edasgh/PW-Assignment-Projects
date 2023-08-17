@@ -1,5 +1,7 @@
 # PW Skills Blog
 
+## Live link : https://assignment-blog-5f1437.netlify.app/
+
 ## Description :
  This is a blog application called "PWSkills Blog" using HTML, CSS, and JavaScript. This application allows users to add their own blogs and read any existing blog posts.  All blogs' data will be stored in the browser's LocalStorage on adding a blog to the app.
 
