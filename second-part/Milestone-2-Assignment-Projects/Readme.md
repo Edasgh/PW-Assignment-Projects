@@ -3,7 +3,7 @@
 ## 1. PW Skills Blog : 
   * Repo link : https://github.com/Edasgh/PW-Skills-FSWD-Assignment-Projects/tree/second-part/second-part/Milestone-2-Assignment-Projects/1.%20PWSkills-blog
 
-  * Live link : will be updated sortly
+  * Live link : https://64ddb9d922604745aeb4aa9b--super-meringue-c1e61e.netlify.app/
 
 
 ## 2. Movie-Search App:
