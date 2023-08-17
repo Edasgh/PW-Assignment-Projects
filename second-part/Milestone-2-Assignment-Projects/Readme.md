@@ -6,7 +6,7 @@
   * Live link : will be updated sortly
 
 
-## 2. Movie-Search App (incomplete):
+## 2. Movie-Search App:
   * Repo link : https://github.com/Edasgh/PW-Skills-FSWD-Assignment-Projects/tree/second-part/second-part/Milestone-2-Assignment-Projects/2.%20Movie-search
 
   * Live link : will be updated sortly
