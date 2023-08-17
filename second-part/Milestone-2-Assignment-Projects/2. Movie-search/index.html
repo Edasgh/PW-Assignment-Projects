@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Js Movie Search</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Fontawesome link -->
-    <script
-      src="https://kit.fontawesome.com/a508d8e351.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- heading and searchbox -->
-    <nav class="navbar">
-      <h1>Movie List</h1>
-      <input
-        type="text"
-        name="search-box"
-        id="search-box"
-        class="search-box"
-        placeholder="Search movies.."
-      />
-    </nav>
-
-    <!-- movies section -->
-    <section class="movies">
-    </section>
-
-    <!-- JS File -->
-    <script src="./script.js"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Search App</title>
+</head>
+<body>
+  <!-- the search-div and the movie-details container -->
+    <div class="container">
+        <h1>Movie Search App</h1>
+        <!-- Search-div -->
+        <div class="search-container">
+            <input type="text" id="movieInput" placeholder="Enter a movie title...">
+            <button id="searchButton">Search</button>
+        </div>
+        <!-- movie-details-container -->
+        <div class="movie-details" id="movieDetails">
+            <!-- Fetched movie details will be displayed here -->
+        </div>
+    </div>
+    <!-- Js file -->
+    <script src="script.js"></script>
+</body>
 </html>

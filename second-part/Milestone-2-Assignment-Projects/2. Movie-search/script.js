@@ -1,85 +1,59 @@
-// omdb apiKey
-const apiKey = "b3d8a02c";
+const apiKey = "b3d8a02c"; // Replace with your actual OMDB API key
 
-let searchTerm="avenger"
+// default image url if poster not found
+const defaultImg="./assets/not-found.png"
 
-const defaultImgURL="https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?auto=compress&cs=tinysrgb&w=600"
+// getting the search-button, searchBox = movieInput and movieDetails container
+const searchButton = document.getElementById("searchButton");
+const movieInput = document.getElementById("movieInput");
+const movieDetails = document.getElementById("movieDetails");
 
-// movies section
-const moviesSection = document.querySelector(".movies");
+// hide the movieDetails container if nothing has been searched
+window.onload=function(){
+  movieDetails.style.display="none"
+}
 
-// searchbox
-const searchBar = document.querySelector(".search-box");
+// on clicking the search button
+searchButton.addEventListener("click", async () => {
+  //getting the searchBox value
+  const searchTerm = movieInput.value.trim();
 
+  if (searchTerm === "") {
+    return;
+  }
 
-
-
-
-// // function to fetch all the movies
-// const getMovies = async () => {
-//   try {
-//       const movies = await fetch(
-//         `http://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}`
-//         );
-//         const data = await movies.json();
-//         // return all the elements of search array
-//         return data.Search
-      
-    
-//   } catch (error) {
-//     console.log(error);
-//     return error;
-//   }
-// };
-
-// // function to show all movies in dom
-// const showAllMovies = async() => {
-
-//   const movies = await getMovies();
   
-//   if (movies) {
-//     // creating a movie-card for each movie
-//     movies.forEach((movie) => {
-//       const movieCard = document.createElement("div");
-//       movieCard.classList.add("movie-card");
-//       movieCard.innerHTML = `<img class="movie-img" src=${(movie.Poster)=="N/A"?defaultImgURL:(movie.Poster)} alt=${movie.Title} />
-//     <p class="movie-title">${movie.Title}</p>
-//     <button class="watch">Watch Now</button>`;
-//       moviesSection.appendChild(movieCard);
-//     });
-//   }
-// };
+  const apiUrl = `https://www.omdbapi.com/?t=${searchTerm}&apikey=${apiKey}`;
+  try {
+    // fetch data and show the relevant movie
+    const result = await fetch(`${apiUrl}`);
+    const data = await result.json();
+    if (data.Response == "True") {
+      //show the movieDetails container after searching
+      movieDetails.style.display="flex"
+    displayMovieDetails(data);
+     
+    } else {
+      movieDetails.innerHTML = "<p>Sorry! Movie not found :(</p>";
+    }
+  } catch (error) {
+    // handling error
+    console.error("Error fetching data:", error);
+    movieDetails.innerHTML = "<p>An error occurred while fetching data</p>";
+  }
+});
 
-
-// // functionality of searchBar
-// searchBar.onkeyup = function (e) {
-//   searchTerm=e.target.value.toString();
-  
-//   console.log(searchTerm)
-  
-  
-// };
-
-// const searchLetterByLetter=(e)=>{
-//   let filter = e.target.value.toUpperCase();
-
-
-//   let movieCards = moviesSection.getElementsByTagName("div");
-
-//   for (let i = 0; i < movieCards.length; i++) {
-//     const title = movieCards[i].querySelector("p");
-
-//     if (title) {
-//       let titleVal = title.textContent || title.innerHTML;
-
-//       if (titleVal.toUpperCase().indexOf(filter) > -1) {
-//         movieCards[i].style.display = "";
-//       } else {
-//         movieCards[i].style.display = "none";
-//       }
-//     }
-//   }
-// }
-
-
-showAllMovies();
+// show the movie details on the page after searching
+function displayMovieDetails(movie) {
+  movieDetails.innerHTML = `
+        <div class="left-part">
+        <h2>${movie.Title}</h2>
+        <img src="${(movie.Poster)=="N/A"?defaultImg:(movie.Poster)}" alt="${movie.Title} Poster">
+        </div>
+        <div class="right-part">
+        <p><strong>Year:</strong> ${movie.Year}</p>
+        <p><strong>Director:</strong> ${movie.Director}</p>
+        <p><strong>Plot:</strong> ${movie.Plot}</p>
+        </div>
+    `;
+}
