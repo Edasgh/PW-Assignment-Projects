@@ -13,7 +13,8 @@ const App=()=> {
           <Navbar />
           <AddTodoModal/>
           <Routes>
-            <Route exact path="/" element={<Home />}></Route>
+            <Route  path="/" element={<Home />}></Route>
+            <Route  path="/index.html" element={<Home />}></Route>
             <Route exact path="/todos" element={<Todos />}></Route>
           </Routes>
         </BrowserRouter>
