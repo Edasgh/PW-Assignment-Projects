@@ -103,15 +103,18 @@
         />
       </section>
     </footer>
-    <!-- Js File -->
+    <!-- Js Code -->
     <script>
+      // the menubar and the nav-list
       const menuBar = document.querySelector("i");
       const nav_list = document.querySelector(".navbar> .nav_ul");
 
+      // on clicking the menubar, show the hidden nav-list to the user
       menuBar.addEventListener("click", () => {
         if (document.body.clientWidth >= 500) {
           nav_list.style.display = "flex";
         } else {
+          // if the screen-width is less than 500px, then on showing the the hidden nav-list, the menu-bar should show the down arrow
           if (nav_list.style.display === "flex") {
             menuBar.classList.remove("fa-caret-down");
             nav_list.style.display = "none";
@@ -122,24 +125,27 @@
         }
       });
 
+      // if the user resizes the window
       window.addEventListener("resize", () => {
         if (this.document.body.clientWidth >= 500) {
           nav_list.style.display = "flex";
-          menuBar.style.display="none"
+          menuBar.style.display = "none";
         } else {
           if (nav_list.style.display === "flex") {
+            // if the nav-list display is flex, menu-bar should show down-arrow
             menuBar.classList.add("fa-caret-down");
-            menuBar.style.display="initial"
+            menuBar.style.display = "initial";
           } else {
+            // if the nav-list display is hidden, menu-bar should be as it is
             menuBar.classList.remove("fa-caret-down");
-            menuBar.style.display="initial"
+            menuBar.style.display = "initial";
           }
         }
       });
 
-
+      // if the screen-width is less than 500px, then on showing the the hidden nav-list, the menu-bar should show the down arrow
       if (document.body.clientWidth >= 500) {
-        menuBar.style.display="none"
+        menuBar.style.display = "none";
       }
       if (document.body.clientWidth < 500) {
         if (nav_list.style.display === "flex") {
