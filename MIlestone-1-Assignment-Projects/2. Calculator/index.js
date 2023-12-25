@@ -1,12 +1,12 @@
 // getting all the required elements
-const previousInput = document.querySelector("#calculateInputPrev");
-const currentInput = document.querySelector("#calculateInputCurr");
-const numButtons = document.querySelectorAll(".number");
-const operationButtons = document.querySelectorAll(".operator");
-const allClearButton = document.querySelector(".all-clear");
-const deleteButton = document.querySelector(".delete");
-const pointButton = document.querySelector("#point");
-const equalsButton = document.querySelector("#EqualBtn");
+const previousInput = document.querySelector("#calculateInputPrev"),
+  currentInput = document.querySelector("#calculateInputCurr"),
+  numButtons = document.querySelectorAll(".number"),
+  operationButtons = document.querySelectorAll(".operator"),
+  allClearButton = document.querySelector(".all-clear"),
+  deleteButton = document.querySelector(".delete"),
+  pointButton = document.querySelector("#point"),
+  equalsButton = document.querySelector("#EqualBtn");
 // functionality of DEL button
 const deletion = () => {
   currentInput.value = currentInput.value.toString().slice(0, -1);
@@ -18,7 +18,7 @@ const allClear = () => {
   previousInput.value = "";
 };
 allClearButton.addEventListener("click", allClear); //calling the allClear function as user clicks the AC button
-deleteButton.addEventListener("click", deletion);//calling the deletion function as user clicks the DEL button
+deleteButton.addEventListener("click", deletion); //calling the deletion function as user clicks the DEL button
 numButtons.forEach((numButton) => {
   // select each element (number-button) of all the number buttons
   numButton.addEventListener("click", () => {
@@ -28,7 +28,7 @@ numButtons.forEach((numButton) => {
 });
 
 operationButtons.forEach((operator) => {
-   // select each element (operator-button) of all the operator buttons
+  // select each element (operator-button) of all the operator buttons
   operator.addEventListener("click", () => {
     let operation = operator.textContent;
     // if there is no number entered before then don't display or add  the operator
@@ -65,7 +65,7 @@ operationButtons.forEach((operator) => {
         default:
           return;
       }
-     // at the end of the function (after clicking equals button) , show the result in the currentInput field , clear the previousInput field and set the operation as undefined
+      // at the end of the function (after clicking equals button) , show the result in the currentInput field , clear the previousInput field and set the operation as undefined
       currentInput.value = computation;
       previousInput.value = "";
       operation = undefined;
@@ -77,6 +77,6 @@ pointButton.addEventListener("click", () => {
   // as a user clicks a point button , if a point (.) already exists either in the currentInput or in the previousInput field then it'll not either be displayed or added
   if (previousInput.value.includes(".") || currentInput.value.includes("."))
     return;
-    // and display & add the point if it dosen't exist either in the currentInput or in  previousInput field
+  // and display & add the point if it dosen't exist either in the currentInput or in  previousInput field
   currentInput.value += pointButton.textContent;
 });
