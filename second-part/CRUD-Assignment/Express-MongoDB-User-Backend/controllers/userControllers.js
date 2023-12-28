@@ -1,9 +1,8 @@
-//import express-async-handler| this library is used for handling asynchronous errors
-const asyncHandler = require("express-async-handler");
-const User = require("../models/userModel"); //import the "User" model
+//import the "User" model
+const User = require("../models/userModel");
 
 //function to register an user
-const registerUser = asyncHandler(async (req, res) => {
+const registerUser = async (req, res) => {
   try {
     //get all the values from the request body
     const { name, email, password } = req.body;
@@ -26,11 +25,8 @@ const registerUser = asyncHandler(async (req, res) => {
 
     // create an user with the entered credentials
     const user = await User.create({
-      name,
-      email,
-      password,
+      ...req.body,
     });
-
     if (user) {
       // if the user is sucessfully created at the database, send the success statusCode and the user details as response
       res.status(201).json([
@@ -48,16 +44,20 @@ const registerUser = asyncHandler(async (req, res) => {
     }
   } catch (error) {
     //handle the error here
-    res.status(500);
-    throw new Error(error);
+    res.status(500).send({ message: error.message });
   }
-});
+};
 
 //function to login an user
-const loginUser = asyncHandler(async (req, res) => {
+const loginUser = async (req, res) => {
   try {
     //get the email and the password from the request body
     const { email, password } = req.body;
+
+    if (!email || !password) {
+      res.status(401);
+      throw new Error("Please fill all the fields!");
+    }
     //find an user with this email
     const user = await User.findOne({ email });
     if (user && (await user.matchPassword(password))) {
@@ -77,10 +77,9 @@ const loginUser = asyncHandler(async (req, res) => {
     }
   } catch (error) {
     // handle the error here
-    res.status(500);
-    throw new Error(error);
+    res.status(500).send({ message: error.message });
   }
-});
+};
 
 //export the registerUser and the loginUser function
 module.exports = { registerUser, loginUser };

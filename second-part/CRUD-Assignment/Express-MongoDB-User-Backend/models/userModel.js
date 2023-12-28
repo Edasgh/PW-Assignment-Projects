@@ -1,7 +1,7 @@
-// import the mongoose and the Schema
+// import the mongoose and  its Schema
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-// import the bcryptjs module
+// import  bcryptjs
 const bcrypt = require("bcryptjs");
 
 //creating a new Schema
@@ -27,7 +27,7 @@ userModel.pre("save", async function (next) {
 
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
-  //hash the password before saving
+  //hash/encript the password before saving
 });
 
 //assigning the Schema to create a mongoose model
