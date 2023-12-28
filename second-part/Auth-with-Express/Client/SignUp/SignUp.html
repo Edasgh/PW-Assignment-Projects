@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../Styles.css" />
+    <title>Instagram - SignUp to Instagram</title>
+  </head>
+  <body>
+    <!-- the signUp form -->
+    <div class="container">
+      <h2>Instagram SignUp</h2>
+      <form id="sign-up">
+        <div class="input-line">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <label for="userName">Username</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Enter your Username"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@mail.com"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="input-line">
+          <label for="bio">Bio</label>
+          <input
+            type="text"
+            name="bio"
+            id="bio"
+            placeholder="Tell others about yourself"
+          />
+        </div>
+
+        <button type="submit" id="signUp-user">Sign Up</button>
+      </form>
+
+      <div class="link-line">
+        <a href="../Login/Login.html">Aready have an account ? : Log In</a>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="./SignUp.js"></script>
+  </body>
+</html>
