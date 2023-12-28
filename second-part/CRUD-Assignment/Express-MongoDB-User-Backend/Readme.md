@@ -66,7 +66,7 @@ else, a new Error will be thrown.
 
 And, in the catch block, if any of these errors occur, it will send the status code of 500 and send the respective error message as a message.
 
-4. At first, the function to handle the "POST" request at "/register" endpoint is created.
+4. Then, the function to handle the "POST" request at "/login" endpoint is created.
 
 The functionalities in the "loginUser" function are :
 
