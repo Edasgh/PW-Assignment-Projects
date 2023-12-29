@@ -1,3 +1,4 @@
+const Cookies = require("js-cookie");
 const signupDataValidate = async (req, res, next) => {
   try {
     const { name, userName, email, password, bio } = req.body;
@@ -33,11 +34,14 @@ const jwt_secret = process.env.JWT_SECRET;
 
 const User = require("../models/userModel");
 const authenticateUser = async (req, res, next) => {
-  let token = req.cookies?.token || null;
-  // token=Cookies.get("token");
+  let token;
 
-  if (token) {
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer")
+  ) {
     try {
+      token = req.headers.authorization.split(" ")[1];
       //decodes token id
       const decoded = jwt.verify(token, jwt_secret);
 

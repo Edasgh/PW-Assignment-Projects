@@ -1,5 +1,6 @@
 const { generateToken } = require("../config/generateToken");
 const User = require("../models/userModel");
+const Cookies = require("js-cookie");
 
 const registerUser = async (req, res) => {
   try {
@@ -23,11 +24,6 @@ const logInUser = async (req, res) => {
     const user = await User.findOne({ email });
     if (user && (await user.matchPassword(password))) {
       const token = generateToken(user._id);
-      res.cookie("token", token, {
-        maxAge: 7 * 24 * 60 * 60 * 1000,
-        httpOnly: true,
-      });
-      // Cookies.set('token', token, { expires: 7, secure: true })
 
       res.status(200).json({
         token: token,
