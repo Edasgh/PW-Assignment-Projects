@@ -1,0 +1,97 @@
+/* Styling the body tag, all buttons and anchor tags */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button {
+  padding: 0.5rem 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #808080;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  outline: none;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling the App-container, container divs and the user-info and the repo-modal div */
+.App-container {
+  margin: 0 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 1rem 0;
+}
+
+.App-container input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #808080;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.user-info {
+  margin: 1rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  width: 400px;
+}
+
+.user-info img {
+  width: 210px;
+  border: none;
+  box-shadow: 1px 1px 10px #a1d0aa, -1px -1px 10px #86e498;
+  border-radius: 0.5rem;
+}
+
+.user-info .label {
+  position: absolute;
+  background-color: #f4fffc;
+  padding: 0.4rem;
+  font-weight: bold;
+
+  border: 2px solid cyan;
+  border-radius: 0.5rem;
+  top: -0.99rem;
+  left: 15rem;
+
+  cursor: default;
+}
+
+.repos-container {
+  display: none;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin: 1rem 0.5rem;
+}
+
+/* Styling the single-repo and the see-repo button */
+.single-repo {
+  background-color: #128224;
+  color: #ffffff;
+}
+
+.see-repos {
+  background-color: #cfffd8;
+}
