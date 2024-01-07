@@ -1,13 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <>
-      <div className="app">
-        <p className="lkg">hi, there</p>
-      </div>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
