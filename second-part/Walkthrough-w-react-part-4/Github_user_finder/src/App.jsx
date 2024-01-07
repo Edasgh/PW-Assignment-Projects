@@ -9,8 +9,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [results, setResults] = useState([]);
 
-  //debouncing the searchTerm on a 800ms delay
-  const debouncedSearchTerm = useDebounce(searchTerm, 800);
+  //debouncing the searchTerm on a 500ms delay
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
   //the fetchData function to fetch an user's information
   const fetchData = async () => {
@@ -47,53 +47,60 @@ function App() {
         />
         {/* results-container contains the user details and the repos-container */}
         <div className="container results-container">
-          {results.map((user) => (
-            <div key={user.id} className="user-info">
-              <a
-                href={`${user.html_url}`}
-                target="_blank"
-                title={`View ${user.login}'s github profile`}
-              >
-                <img
-                  className="user-pic"
-                  src={user.avatar_url}
-                  alt={user.login}
-                />
-              </a>
-              <p className="label" title={`Username : ${user.login}`}>
-                {user.login}
-              </p>
-              {/* button to show or hide the repos */}
-              <button
-                id={`see-repos-${user.id}`}
-                className="see-repos"
-                onClick={() => {
-                  let repoDiv = document.getElementById(`repos-${user.id}`);
-                  let seeRepoBtn = document.getElementById(
-                    `see-repos-${user.id}`
-                  );
-                  if (repoDiv.style.display === "none") {
-                    repoDiv.style.display = "flex";
-                    seeRepoBtn.textContent = "Hide Repos";
-                  } else {
-                    repoDiv.style.display = "none";
-                    seeRepoBtn.textContent = "Show Repos";
-                  }
-                }}
-              >
-                Show Repos
-              </button>
-              {/* the repos-container */}
-              <div
-                className="repos-container"
-                id={`repos-${user.id}`}
-                style={{ display: "none" }}
-              >
-                {/* <p> fetch repos of a specific user </p> */}
-                <Repos url={user.repos_url} />
+          {results.length !== 0 ? (
+            results.map((user) => (
+              <div key={user.id} className="user-info">
+                <a
+                  href={`${user.html_url}`}
+                  target="_blank"
+                  title={`View ${user.login}'s github profile`}
+                >
+                  <div className="user-avatar-container">
+                    <img
+                      className="user-pic"
+                      src={user.avatar_url}
+                      alt={user.login}
+                    />
+                    <p className="user-name" title={`Username : ${user.login}`}>
+                      {user.login}
+                    </p>
+                  </div>
+                </a>
+
+                {/* button to show or hide the repos */}
+                <button
+                  id={`see-repos-${user.id}`}
+                  className="see-repos"
+                  onClick={() => {
+                    let repoDiv = document.getElementById(`repos-${user.id}`);
+                    let seeRepoBtn = document.getElementById(
+                      `see-repos-${user.id}`
+                    );
+                    if (repoDiv.style.display === "none") {
+                      repoDiv.style.display = "flex";
+                      seeRepoBtn.textContent = "Hide Repos";
+                    } else {
+                      repoDiv.style.display = "none";
+                      seeRepoBtn.textContent = "Show Repos";
+                    }
+                  }}
+                >
+                  Show Repos
+                </button>
+
+                {/*  fetch repos of a specific user  */}
+                <Repos user={user} />
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <>
+              {searchTerm === "" ? (
+                <p className="label">{`Type to search an user`}</p>
+              ) : (
+                <p className="label">{`No results found for the query : "${searchTerm}"`}</p>
+              )}
+            </>
+          )}
         </div>
       </div>
     </>

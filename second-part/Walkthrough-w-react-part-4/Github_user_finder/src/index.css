@@ -46,24 +46,28 @@ a {
 }
 
 .user-info {
-  margin: 1rem 0;
   position: relative;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 
   width: 400px;
 }
+/* Styling the avatar_container div */
+.user-avatar-container {
+  position: relative;
+}
 
-.user-info img {
+.user-pic {
   width: 210px;
   border: none;
   box-shadow: 1px 1px 10px #a1d0aa, -1px -1px 10px #86e498;
   border-radius: 0.5rem;
 }
 
-.user-info .label {
+.user-info .user-name {
   position: absolute;
   background-color: #f4fffc;
   padding: 0.4rem;
@@ -71,19 +75,25 @@ a {
 
   border: 2px solid cyan;
   border-radius: 0.5rem;
-  top: -0.99rem;
-  left: 15rem;
+  top: 10.01rem;
+  left: 0rem;
 
   cursor: default;
 }
 
 .repos-container {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0.4rem 2rem;
+}
+
+.another-container {
+  display: flex;
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
-
-  margin: 1rem 0.5rem;
 }
 
 /* Styling the single-repo and the see-repo button */
