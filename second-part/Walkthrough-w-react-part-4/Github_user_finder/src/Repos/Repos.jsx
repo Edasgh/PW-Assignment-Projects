@@ -13,6 +13,7 @@ const Repos = ({ user }) => {
       const data = await res.json();
       // set the empty repos state as the recieved repos array
       setRepos(data);
+      console.log(data);
     } catch (error) {
       console.error("Error fetching data from GitHub API:", error);
     }
